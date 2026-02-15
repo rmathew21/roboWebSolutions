@@ -109,7 +109,7 @@ export function Footer() {
 
                 <div className="pt-8 border-t border-[#334155] flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">
-                            ©  {currentYear} Robo Web Solutions. All rights reserved.
+                            ©  {currentYear} Robo Web Solutions LLC. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
                             <button className="text-gray-400 hover:text-[#F59E0B] transition-colors text-sm">
