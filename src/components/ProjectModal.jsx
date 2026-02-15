@@ -86,7 +86,7 @@ export function ProjectModal({ project, onClose }) {
             </div>
           </div>
 
-          <div className="bg-[#FAF9F6] rounded-xl p-6">
+          {/* <div className="bg-[#FAF9F6] rounded-xl p-6">
           <h3 className="text-xl font-bold text-[#1E293B] mb-4">Results</h3>
             <div className="space-y-3">
                 {project.results.map((result, index) => (
@@ -98,7 +98,7 @@ export function ProjectModal({ project, onClose }) {
                     </div>
                 ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

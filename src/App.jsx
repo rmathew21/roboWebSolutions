@@ -19,7 +19,7 @@ export default function App() {
       <Nav />
       <Hero />
       <About />
-      <ProjectModal />
+      {/* <ProjectModal /> */}
       <Projects />
       <Footer />
 

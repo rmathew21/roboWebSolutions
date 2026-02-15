@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { ProjectModal } from "./ProjectModal";
+import legacyImg from "../assets/legacyLifeAgency.webp"
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -8,29 +9,29 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Bella Vista Restaurant",
-      category: "Restaurant",
-      image:
-        "https://images.unsplash.com/photo-1614801502766-e2562eb626d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXN0YXVyYW50JTIwd2Vic2l0ZSUyMHRhYmxldHxlbnwxfHx8fDE3NzEwODA4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      title: "Legacy Life Agency",
+      category: "Finance",
+      image: legacyImg,
       description:
-        "A modern, elegant website for an upscale Italian restaurant featuring online reservations and menu showcase.",
+        "A modern, mobile-responsive website for Legacy Life Agency, showcasing life-insurance and wealth-planning services",
       fullDescription:
-        "We transformed Bella Vista Restaurant's online presence with a sophisticated website that captures the elegance of their dining experience. The site features a dynamic menu system, online reservation integration, photo gallery, and mobile-responsive design that works flawlessly across all devices.",
+        "Legacy Life Agency needed a professional online presence that would build trust, clearly explain life-insurance and wealth-planning services, and convert visitors into qualified leads. As a new but growing financial-services brand, they required a clean, modern website that felt credible, mobile-friendly, and easy for potential clients to understand.",
       technologies: [
         "React",
+        "Vite",
         "Tailwind CSS",
-        "Framer Motion",
-        "Responsive Design",
+        "React Router",
+        "Formspree",
       ],
-      results: [
-        "150% increase in online reservations",
-        "85% mobile user engagement",
-        "Reduced phone inquiries by 40%",
-      ],
+    //   results: [
+    //     "150% increase in online reservations",
+    //     "85% mobile user engagement",
+    //     "Reduced phone inquiries by 40%",
+    //   ],
       challenge:
-        "The restaurant needed a way to showcase their seasonal menu while handling the high volume of reservation requests efficiently.",
+        "Legacy Life Agency was a new financial-services brand without an online presence. They needed a website that would build trust and credibility in the life-insurance market, while explaining complex services like term life, whole life and wealth planning in a simple language.",
       solution:
-        "We built a custom reservation system integrated with their existing booking platform and created an elegant, photo-rich design that highlights their culinary artistry.",
+        "I designed a developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
     },
     {
       id: 2,
