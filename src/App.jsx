@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Nav } from './components/Nav';
 
+import { Footer } from './components/Footer';
+
 export default function App() {
   useEffect(() => {
     document.documentElement.style.scrollBehavior = 'smooth';
@@ -12,6 +14,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#FAF9F6]">
       <Nav />
+      <Footer />
 
     </div>
   );
