@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { ProjectModal } from "./ProjectModal";
 import legacyImg from "../assets/legacyLifeAgency.webp"
+import saveApeImg from "../assets/saveApe.webp";
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -35,24 +36,23 @@ export function Projects() {
     },
     {
       id: 2,
-      title: "The Grind Coffee House",
-      category: "Café",
-      image:
-        "https://images.unsplash.com/photo-1746114774895-133d5b677db8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3IlMjBsYXB0b3B8ZW58MXx8fHwxNzcxMDgwODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      title: "Save Austin Parkway",
+      category: "Edu Advocacy",
+      image: saveApeImg,
       description:
-        "Cozy coffee shop website with online ordering system and loyalty program integration.",
+        "A community advocacy website built to help parents and neighbors rally support for Austin Parkway Elementary, providing updates, petitions, and tools to contact school board members and protect a local school from closure.",
       fullDescription:
-        "The Grind Coffee House wanted to expand their business with online ordering while maintaining their warm, community-focused brand. We delivered a website that feels as inviting as their physical location, complete with seamless online ordering and a digital loyalty program.",
-      technologies: ["React", "Context API", "CSS Grid", "Progressive Web App"],
-      results: [
-        "200+ weekly online orders",
-        "1,000+ loyalty members enrolled",
-        "4.9/5 customer satisfaction",
-      ],
+        "SaveAPE.org is a grassroots community website built to help parents, teachers, and neighbors organize around the potential closure of Austin Parkway Elementary in Fort Bend ISD. The site provides clear information about proposed school closures, upcoming board meetings, and ways community members can take action, such as signing petitions, emailing trustees, and speaking at public hearings.",
+      technologies: ["Squarespace", "Custom CSS", "Google Form Integration", "Change.org Petition Embed"],
+    //   results: [
+    //     "200+ weekly online orders",
+    //     "1,000+ loyalty members enrolled",
+    //     "4.9/5 customer satisfaction",
+    //   ],
       challenge:
-        "Balancing a complex online ordering system with the warm, personal touch that defines their brand.",
+        "The SaveAPE community needed a website on extremely short notice after Fort Bend ISD announced a proposed school closure with very little time before the board vote. Parents and neighbors needed a central place to get accurate information, sign petitions, submit feedback, and contact trustees. The site had to be built quickly, be easy for volunteers to update, and work perfectly on mobile devices.",
       solution:
-        "We designed a streamlined ordering flow that feels intuitive and personal, with features like order favorites, customization options, and a smooth checkout experience.",
+        "I rapidly designed and launched SaveAPE.org using Squarespace to ensure a fast turnaround while still delivering a clean, professional site the community could trust. The site integrated Google Forms for feedback collection and Change.org petitions to coordinate grassroots advocacy efforts. I structured the layout around clear calls-to-action, mobile-friendly navigation, and easy-to-update content so volunteers could keep the community informed as deadline approached.",
     },
     {
       id: 3,
