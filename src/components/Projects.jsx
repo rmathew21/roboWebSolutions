@@ -4,7 +4,7 @@ import { ProjectModal } from "./ProjectModal";
 import legacyImg from "../assets/legacyLifeAgency.webp"
 import legacyMockUp from "../assets/legacyLifeMockup.png";
 import saveApeImg from "../assets/saveApe.webp";
-import saveApeImg2 from "../assets/saveApeMockUp2.png"
+import saveApeImg2 from "../assets/saveApeMockup2.png"
 import freeSwingImg from "../assets/freeSwing.webp";
 import freeSwingMockup from "../assets/freeSwingMockup.png"
 
