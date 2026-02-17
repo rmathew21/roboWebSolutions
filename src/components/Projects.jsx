@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { ProjectModal } from "./ProjectModal";
 import legacyImg from "../assets/legacyLifeAgency.webp"
+import legacyMockUp from "../assets/legacyLifeMockup.png";
 import saveApeImg from "../assets/saveApe.webp";
+import saveApeImg2 from "../assets/saveApeMockUp2.png"
+import freeSwingImg from "../assets/freeSwing.webp";
+import freeSwingMockup from "../assets/freeSwingMockup.png"
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -12,7 +16,7 @@ export function Projects() {
       id: 1,
       title: "Legacy Life Agency",
       category: "Finance",
-      image: legacyImg,
+      image: legacyMockUp,
       description:
         "A modern, mobile-responsive website for Legacy Life Agency, showcasing life-insurance and wealth-planning services",
       fullDescription:
@@ -38,7 +42,7 @@ export function Projects() {
       id: 2,
       title: "Save Austin Parkway",
       category: "Edu Advocacy",
-      image: saveApeImg,
+      image: saveApeImg2,
       description:
         "A community advocacy website built to help parents and neighbors rally support for Austin Parkway Elementary, providing updates, petitions, and tools to contact school board members and protect a local school from closure.",
       fullDescription:
@@ -56,29 +60,28 @@ export function Projects() {
     },
     {
       id: 3,
-      title: "Urban Threads Boutique",
-      category: "Retail",
-      image:
-        "https://images.unsplash.com/photo-1563223827-817bf3d83907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MXx8fHwxNzcxMDgwODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      title: "Free Swing",
+      category: "Sports",
+      image: freeSwingMockup,
       description:
-        "Fashion boutique website with virtual styling consultations and e-commerce capabilities.",
+        "Free Swing is a modern landing page for an indoor golf simulator business, designed to showcase memberships, booking options, and immersive simulator features while providing a clean, mobile-responsive user experience.",
       fullDescription:
-        "Urban Threads Boutique needed an online presence that matched their curated, trendy aesthetic. We created a visually stunning website that showcases their unique fashion pieces and offers virtual styling consultations, bridging the gap between online and in-store experiences.",
+        "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology. The goal was to create a clean, conversion-focused landing page that clearly communicates membership options, pricing tiers, and booking details while establishing a strong, modern brand presence for a new local business preparing to open in Missouri City.",
       technologies: [
         "React",
         "Tailwind CSS",
         "Image Optimization",
         "Animation",
       ],
-      results: [
-        "300% increase in online visibility",
-        "Virtual consultations fully booked",
-        "60% of visitors explore 5+ pages",
-      ],
+      // results: [
+      //   "300% increase in online visibility",
+      //   "Virtual consultations fully booked",
+      //   "60% of visitors explore 5+ pages",
+      // ],
       challenge:
-        "Creating a high-end visual experience that loads quickly and showcases their inventory effectively.",
+        "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
       solution:
-        "We implemented advanced image optimization techniques and created a grid-based layout that highlights their products while maintaining fast load times.",
+        "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
     },
     {
       id: 4,
@@ -160,7 +163,7 @@ export function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#1E293B] to-transparent opacity-60 group-hover:opacity-80 transition-opactiy"></div>
                 <div className="absolute bottom-4 left-4 right-4">
