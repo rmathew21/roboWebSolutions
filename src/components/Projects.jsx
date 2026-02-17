@@ -7,6 +7,7 @@ import saveApeImg from "../assets/saveApe.webp";
 import saveApeImg2 from "../assets/saveApeMockup2.png"
 import freeSwingImg from "../assets/freeSwing.webp";
 import freeSwingMockup from "../assets/freeSwingMockup.png"
+import nexGenMockup from "../assets/nexGenMockup.png"
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -85,29 +86,29 @@ export function Projects() {
     },
     {
       id: 4,
-      title: "TechFix Solutions",
+      title: "NexGen Professional Solutions",
       category: "Services",
-      image:
-        "https://images.unsplash.com/photo-1647973035166-2abf410c68b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2NhbCUyMGJ1c2luZXNzJTIwd2Vic2l0ZSUyMG1vY2t1cHxlbnwxfHx8fDE3NzEwODA4ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: nexGenMockup,
       description:
-        "Tech repair shop website with appointment booking and device diagnostic tools.",
+        "A clean, modern business website for NexGen Proffessional Solutions, showcasing automation, recruting, staff augmentation, and digital transformation consulting services with a profressional and scalable design.",
       fullDescription:
-        "TechFix Solutions wanted to streamline their booking process and educate customers about common tech issues. We built a comprehensive website with an appointment system, service catalog, and helpful diagnostic tools that improved customer experience and reduced support calls.",
+        // "NexGen Professional Solutions needed an online presence that clearly communicated their consulting services and built credibility with potential enterprise clients. The website highlights their core offerings--including automation services, recruting and talent acquistion, staff augmentation, and digital transformation consulting--while maintaining a clean, modern layout that works seamlessly across desktop and mobile devices.",
+        "As a forward-thinking consulting firm focused on helping organizations accelerate their digital journey, NexGen required a site that conveyed trust, expertise, and scalability. I designed the website to present services in an easy-to-understand structure, guide visitors toward contact inquiries, and reflect the company's mission to deliver agile, intelligent solutions that drive measurable business outcomes.",
       technologies: [
-        "React",
-        "Form Validation",
-        "Scheduling API",
-        "Interactive Tools",
+        "Squarespace",
+        "Responsive CSS & Layout Design",
+        "SEO Optimization",
+        "Brand & UX Design",
       ],
-      results: [
-        "80% of appointments now booked online",
-        "50% reduction in support calls",
-        "90% appointment show-up rate",
-      ],
+      // results: [
+      //   "80% of appointments now booked online",
+      //   "50% reduction in support calls",
+      //   "90% appointment show-up rate",
+      // ],
       challenge:
-        "Simplifying the complex process of tech repair bookings while providing educational resources.",
+        "NexGen Professional Solutions needed a professional website that clearly explained complex consulting services and built credibility with enterprise clients.",
       solution:
-        "We created an intuitive multi-step booking form with real-time availability and added interactive diagnostic tools that help customers understand their tech issues.",
+        "I created a modern, responsive website with clear service sections, strong branding,a nd optimized contact flows to convert visitors into leads."
     },
     {
       id: 5,
