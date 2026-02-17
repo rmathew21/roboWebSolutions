@@ -7,6 +7,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [
     react(), 
-    tsconfigPaths({ projects: ["./jsconfi.json"] }), 
+    tsconfigPaths({ projects: ["./jsconfig.json"] }), 
     tailwindcss()],
 });
