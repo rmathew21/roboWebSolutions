@@ -68,10 +68,10 @@ export function Projects() {
       fullDescription:
         "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology. The goal was to create a clean, conversion-focused landing page that clearly communicates membership options, pricing tiers, and booking details while establishing a strong, modern brand presence for a new local business preparing to open in Missouri City.",
       technologies: [
-        "React",
-        "Tailwind CSS",
+        "Webflow",
+        "HTML5/CSS3",
         "Image Optimization",
-        "Animation",
+        "SEO Optimization",
       ],
       // results: [
       //   "300% increase in online visibility",
