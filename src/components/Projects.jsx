@@ -8,6 +8,7 @@ import saveApeImg2 from "../assets/saveApeMockup2.png"
 import freeSwingImg from "../assets/freeSwing.webp";
 import freeSwingMockup from "../assets/freeSwingMockup.png"
 import nexGenMockup from "../assets/nexGenMockup.png"
+import sweetTreatMockup from "../assets/sweetNTreatsMockup.png"
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -112,29 +113,29 @@ export function Projects() {
     },
     {
       id: 5,
-      title: "Serenity Spa & Wellness",
-      category: "Wellness",
-      image:
-        "https://images.unsplash.com/photo-1695462131822-368776114494?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGElMjB3ZWxsbmVzcyUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MXx8fHwxNzcxMDgwODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      title: "Sweets N' Treats",
+      category: "Food",
+      image: sweetTreatMockup,  
       description:
-        "Tranquil spa website with service menu, therapist profiles, and gift card purchasing.",
+        "Sweets N' Treats is a mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo galleries while making it easy for customers to inquire and place orders online.",
       fullDescription:
-        "Serenity Spa & Wellness wanted a website that would capture the peaceful, luxurious atmosphere of their spa while making it easy for clients to book services and purchase gift cards. We delivered a serene, elegant design with seamless booking functionality.",
+        "Sweets N' Treats needed a clean, modern website to showcase their baked goods while building credibility for a growing local bakery brand. I designed and developed a mobile-responsive site that highlights their product offerings, photo gallery, and contact options, making it easy for customers to browse and submit inquiries. The website focuses on strong visual storytelling with optimized dessert images, clear navigation, and simple calls to action so customers can quickly explore products and place orders. Built with performance and usability in mind, the site loads quickly on mobile devices and provides a professional online presence that helps the bakery attract new customers and grow their business.",
       technologies: [
-        "React",
-        "Smooth Animations",
-        "Payment Integration",
-        "Accessibility",
+        "HTML5",
+        "Bootstrap + Custom CSS",
+        "JavaScript",
+        "Responsive Mobile-First Design",
+        "Image Optimization"
       ],
-      results: [
-        "45% increase in new client bookings",
-        "Gift card sales up 120%",
-        "Perfect accessibility score",
-      ],
+      // results: [
+      //   "45% increase in new client bookings",
+      //   "Gift card sales up 120%",
+      //   "Perfect accessibility score",
+      // ],
       challenge:
-        "Creating a calming user experience while incorporating multiple e-commerce and booking features.",
+        "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
       solution:
-        "We used subtle animations, a soothing color palette, and intuitive navigation to create a website that feels like a digital extension of the spa experience.",
+        "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
     },
   ];
 
