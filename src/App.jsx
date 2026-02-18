@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { ProjectModal } from './components/ProjectModal';
 import { Projects } from './components/Projects';
 import { Services } from './components/Services';
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       {/* <ProjectModal /> */}
       <Projects />
       <Services />
+      <Contact />
       <Footer />
 
     </div>
