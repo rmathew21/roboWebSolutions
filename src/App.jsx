@@ -19,14 +19,14 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#FAF9F6]">
       <Nav />
-      <Hero />
-      <About />
-      {/* <ProjectModal /> */}
-      <Projects />
-      <Services />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Services />
+        <Contact />
+      </main>
       <Footer />
-
     </div>
   );
 }
