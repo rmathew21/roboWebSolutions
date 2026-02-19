@@ -22,9 +22,9 @@ export function Nav() {
     };
 
     const navLinks = [
-        { label: 'Home', id: 'hero' },
-        { label: 'Projects', id: 'projects' },
+        // { label: 'Home', id: 'hero' },
         { label: 'About', id: 'about' },
+        { label: 'Projects', id: 'projects' },
         { label: 'Services', id: 'services' },
         { label: 'Contact', id: 'contact' },
     ];
