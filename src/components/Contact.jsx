@@ -113,7 +113,7 @@ export function Contact() {
                                 </li>
                                 <li className="flex items-start">
                                     <Check size={20} className="text- mr-2 shrink-0 mt-0 5" />
-                                    <span>Mordern best practices</span>
+                                    <span>Modern best practices</span>
                                 </li>
                             </ul>
                         </div>

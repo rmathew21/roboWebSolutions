@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { ProjectModal } from "./ProjectModal";
-import legacyImg from "../assets/legacyLifeAgency.webp"
 import legacyMockUp from "../assets/legacyLifeMockup.png";
-import saveApeImg from "../assets/saveApe.webp";
 import saveApeImg2 from "../assets/saveApeMockup2.png"
-import freeSwingImg from "../assets/freeSwing.webp";
 import freeSwingMockup from "../assets/freeSwingMockup.png"
 import nexGenMockup from "../assets/nexGenMockup.png"
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png"

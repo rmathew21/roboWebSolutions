@@ -60,7 +60,9 @@ export function Services() {
                     {services.map((service, index) => {
                         const Icon = service.icon;
                         return (
-                            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2x transition-all duration-300 group hover:-translate-y-2">
+                            <div
+                                key={index} 
+                                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2x transition-all duration-300 group hover:-translate-y-2">
                                 <div className="w-16 h-16 bg-linear-to-br from-[#F59E0B] to-[#F97316] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                     <Icon size={32} className="text-white" />
                                 </div>
@@ -72,8 +74,8 @@ export function Services() {
                                 </p>
                                 <ul className="space-y-2">
                                     {service.features.map((feature, idx) => (
-                                        <li className="flex items-center text-sm text-[#64748B]">
-                                            <div className="w-1 5 h-1 5 bg-[#F59E0B] rounded-full mr-2"></div>
+                                        <li key={idx} className="flex items-center text-sm text-[#64748B]">
+                                            <div className="w-1.5 h-1.5 bg-[#F59E0B] rounded-full mr-2"></div>
                                             {feature}
                                         </li>
                                     ))}
