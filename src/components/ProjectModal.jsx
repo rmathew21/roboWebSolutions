@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { X } from "lucide-react";
+import { X, ExternalLink } from "lucide-react";
 
 export function ProjectModal({ project, onClose }) {
   useEffect(() => {
@@ -85,6 +85,29 @@ export function ProjectModal({ project, onClose }) {
               ))}
             </div>
           </div>
+
+          {project.liveUrl && (
+            <div className="mt-10 pt-8 border-t border-[#E5E7EB] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h4 className="text-lg font-bold text-[#1E293B]">
+                  Want to see it in action?
+                </h4>
+                <p className="text-[#64748B]">
+                  Open the deployed site in a new tab.
+                </p>
+              </div>
+
+              <a 
+                href={project.liveUrl} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#F59E0B] text-white font-semibold hover:bg-[#d97706] transition-colors"
+              >
+                {project.liveLabel || "Visit Live Site"}
+                <ExternalLink size={18} className="ml-2" />
+              </a>
+            </div>
+          )}
 
           {/* <div className="bg-[#FAF9F6] rounded-xl p-6">
           <h3 className="text-xl font-bold text-[#1E293B] mb-4">Results</h3>

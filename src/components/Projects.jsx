@@ -36,6 +36,8 @@ export function Projects() {
         "Legacy Life Agency was a new financial-services brand without an online presence. They needed a website that would build trust and credibility in the life-insurance market, while explaining complex services like term life, whole life and wealth planning in a simple language.",
       solution:
         "I designed a developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
+      liveUrl: "https://legacy-life-agency.vercel.app/",
+      liveLabel: "Visit Live Site", 
     },
     {
       id: 2,
@@ -56,6 +58,8 @@ export function Projects() {
         "The SaveAPE community needed a website on extremely short notice after Fort Bend ISD announced a proposed school closure with very little time before the board vote. Parents and neighbors needed a central place to get accurate information, sign petitions, submit feedback, and contact trustees. The site had to be built quickly, be easy for volunteers to update, and work perfectly on mobile devices.",
       solution:
         "I rapidly designed and launched SaveAPE.org using Squarespace to ensure a fast turnaround while still delivering a clean, professional site the community could trust. The site integrated Google Forms for feedback collection and Change.org petitions to coordinate grassroots advocacy efforts. I structured the layout around clear calls-to-action, mobile-friendly navigation, and easy-to-update content so volunteers could keep the community informed as deadline approached.",
+        liveUrl: "https://www.saveape.org/",
+        liveLabel: "Visit Live Site", 
     },
     {
       id: 3,
@@ -81,6 +85,8 @@ export function Projects() {
         "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
       solution:
         "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
+        liveUrl: "https://freeswing.app/",
+        liveLabel: "Visit Live Site", 
     },
     {
       id: 4,
@@ -106,7 +112,9 @@ export function Projects() {
       challenge:
         "NexGen Professional Solutions needed a professional website that clearly explained complex consulting services and built credibility with enterprise clients.",
       solution:
-        "I created a modern, responsive website with clear service sections, strong branding,a nd optimized contact flows to convert visitors into leads."
+        "I created a modern, responsive website with clear service sections, strong branding,a nd optimized contact flows to convert visitors into leads.",
+        liveUrl: "https://www.nexgenprosol.com/",
+        liveLabel: "Visit Live Site", 
     },
     {
       id: 5,
@@ -133,6 +141,8 @@ export function Projects() {
         "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
       solution:
         "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
+        liveUrl: "https://www.sweetsntreatsbakery.com/",
+      liveLabel: "Visit Live Site", 
     },
   ];
 
