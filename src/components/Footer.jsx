@@ -5,9 +5,9 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
-        { icon: Github, href: '#', label: 'Github' },
-        { icon: Linkedin, href: '#', label: 'LinkedIn' },
-        { icon: Twitter, href: '#', label: 'Twitter' },
+        { icon: Github, href: 'https://github.com/rmathew21', label: 'Github' },
+        { icon: Linkedin, href: 'https://www.linkedin.com/in/robin-mathew-61704917b/', label: 'LinkedIn' },
+        { icon: Twitter, href: 'https://x.com/', label: 'Twitter' },
         { icon: Mail, href: 'mailto:rob@robowebsolutions.com', label: 'Email' },
     ];
 
@@ -35,6 +35,8 @@ export function Footer() {
                                     <a 
                                         key={index}
                                         href={social.href}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
                                         aria-label={social.label}
                                         className='w-10 h-10 bg-[#334155] rounded-lg flex items-center justify-center hover:bg-[#F59E0B] transition-colors'
                                     >
@@ -58,14 +60,6 @@ export function Footer() {
                             </li>
                             <li>
                                 <button 
-                                    onClick={() => scrollToSection('projects')}
-                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
-                                >
-                                    Projects
-                                </button>
-                            </li>
-                            <li>
-                                <button 
                                     onClick={() => scrollToSection('about')}
                                     className="text-gray-400 hover:text-[#F59E0B] transition-colors"
                                 >
@@ -74,10 +68,26 @@ export function Footer() {
                             </li>
                             <li>
                                 <button 
+                                    onClick={() => scrollToSection('projects')}
+                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
+                                >
+                                    Projects
+                                </button>
+                            </li>
+                            <li>
+                                <button 
                                     onClick={() => scrollToSection('services')}
                                     className="text-gray-400 hover:text-[#F59E0B] transition-colors"
                                 >
                                     Services
+                                </button>
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={() => scrollToSection('contact')}
+                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
+                                >
+                                    Contact
                                 </button>
                             </li>
                         </ul>
