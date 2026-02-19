@@ -70,7 +70,10 @@ export function Nav() {
                 {isMobileMenuOpen && (
                     <nav className="md:hidden py-4 border-t border-[#334155]">
                         {navLinks.map((link) => (
-                            <button className="block w-full text-left py-2 text-gray-300 hover:text-[#F59E0B] transition-colors font-medium"
+                            <button 
+                                key={link.id}
+                                onClick={() => scrollToSection(link.id)}
+                                className="block w-full text-left py-2 text-gray-300 hover:text-[#F59E0B] transition-colors font-medium"
                             >
                                 {link.label}
                             </button>
