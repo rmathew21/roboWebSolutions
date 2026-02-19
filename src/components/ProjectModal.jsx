@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { X, Check } from "lucide-react";
+import { X } from "lucide-react";
 
 export function ProjectModal({ project, onClose }) {
   useEffect(() => {

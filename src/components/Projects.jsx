@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { ProjectModal } from "./ProjectModal";
 import legacyImg from "../assets/legacyLifeAgency.webp"
 import legacyMockUp from "../assets/legacyLifeMockup.png";
