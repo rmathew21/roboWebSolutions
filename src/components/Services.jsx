@@ -42,13 +42,13 @@ export function Services() {
     ];
 
     return (
-        <section id="services" className="py-20 bg-[#FAF9F6]">
+        <section id="services" className="py-20 bg-linear-to-br from-slate-900 via-slate-800 to-[#1c1405] relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center px-4 py-2 bg-[#FEF3C7] text-[#F59E0B] rounded-full mb-4">
                         <span className="text-sm font-medium">What We Offer</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                         Our Services
                     </h2>
                     <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
