@@ -36,7 +36,7 @@ export function Projects() {
         "Legacy Life Agency was a new financial-services brand without an online presence. They needed a website that would build trust and credibility in the life-insurance market, while explaining complex services like term life, whole life and wealth planning in a simple language.",
       solution:
         "I designed a developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
-      liveUrl: "https://legacy-life-agency.vercel.app/",
+      liveUrl: "https://www.legacylifeagency.net/",
       liveLabel: "Visit Live Site", 
     },
     {
