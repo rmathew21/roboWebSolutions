@@ -48,13 +48,7 @@ export function Nav() {
                             Robo Web Solutions
                         </span>
                     </a>
-                    {/* <button 
-                        onClick={() => scrollToSection('hero')} 
-                        className="text-2xl font-bold text-white hover:text-[#F59E0B] transition-color"
-                    >
-                        Robo Web Solutions
-                    </button> */}
-
+                    
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
@@ -82,29 +76,29 @@ export function Nav() {
                     >
                         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
-                </div>
-                
-                {/* Mobile Navigation */}
-                {isMobileMenuOpen && (
-                    <nav className="md:hidden bg-[#0F172A]/95 py-10 border-t border-[#334155]">
+                </div>     
+            </div>
+
+            {/* Mobile Navigation */}
+            {isMobileMenuOpen && (
+                    <nav className="md:hidden bg-[#0F172A]/95 border-t border-[#334155] px-4 sm:px-6 pb-6 pt-4">
                         {navLinks.map((link) => (
                             <button 
                                 key={link.id}
                                 onClick={() => scrollToSection(link.id)}
-                                className="block w-full text-left py-2 text-slate-400 hover:text-[#C9A24D] transition-colors font-medium"
+                                className="block w-full text-center py-3 text-slate-300 hover:text-[#C9A24D] transition-colors font-medium border-b border-[#334155]/50 last:border-0"
                             >
                                 {link.label}
                             </button>
                         ))}
                         <button 
                             onClick={() => scrollToSection('contact')}
-                            className="mt-3 w-full px-5 py-2 bg-[#C9A24D] text-[#0F172A] rounded-semibold hover:bg-[#e3b75a] transition-all duration-300"
+                            className="mt-4 w-full px-5 py-3 bg-[#C9A24D] text-[#0F172A] rounded-lg font-semibold hover:bg-[#e3b75a] transition-all duration-300"
                             >
                                 Get Started
                         </button>
                     </nav>
                 )}
-            </div>
         </header>
     );
 }
