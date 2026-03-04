@@ -86,7 +86,7 @@ export function Nav() {
                 
                 {/* Mobile Navigation */}
                 {isMobileMenuOpen && (
-                    <nav className="md:hidden py-4 border-t border-[#334155]">
+                    <nav className="md:hidden bg-[#0F172A]/95 py-10 border-t border-[#334155]">
                         {navLinks.map((link) => (
                             <button 
                                 key={link.id}
