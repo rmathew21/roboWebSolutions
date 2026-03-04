@@ -1,37 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Check } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        businessType: '',
-        message: '',
-    });
-    const [isSubmitted, setIsSubmitted] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setIsSubmitted(true);
-        setTimeout(() => {
-            setIsSubmitted(false);
-            setFormData({
-                name: '',
-                email: '',
-                phone: '',
-                businessType: '',
-                message: '',
-            });
-        }, 3000);
-    };
+    const [state, handleFormSubmit] = useForm("xzdanykl");
 
     const contactInfo = [
         {
@@ -120,8 +92,8 @@ export function Contact() {
                     </div>
 
                     <div className="lg:col-span-2">
-                        <form onSubmit={handleSubmit} className="bg-[#1E293B] border border-[#334155] p-8 rounded-2xl shadow-lg">
-                            {isSubmitted ? (
+                        <form onSubmit={handleFormSubmit} className="bg-[#1E293B] border border-[#334155] p-8 rounded-2xl shadow-lg">
+                            {state.succeeded ? (
                                 <div className="text-center py-12">
                                     <div className="w-20 h-20 bg-green-900/30 border border-green-700/40 rounded-full flex items-center justify-center mx-auto mb-6">
                                         <Check size={40} className="text-green-400" />
@@ -144,8 +116,6 @@ export function Contact() {
                                                 type='text' 
                                                 id='name'    
                                                 name='name'
-                                                value={formData.name}
-                                                onChange={handleChange}
                                                 required
                                                 className='w-full px-4 py-3 bg-[#0F172A] border border-[#334155] text-white placeholder-slate-600 rounded-lg focus:ring-2 focus:ring-[#C9A24D] focus:border-transparent outline-none transition-all'
                                                 placeholder='John Doe'
@@ -159,11 +129,14 @@ export function Contact() {
                                                 type='email' 
                                                 id='email'    
                                                 name='email'
-                                                value={formData.email}
-                                                onChange={handleChange}
                                                 required
                                                 className='w-full px-4 py-3 bg-[#0F172A] border border-[#334155] text-white placeholder-slate-600 rounded-lg focus:ring-2 focus:ring-[#C9A24D] focus:border-transparent outline-none transition-all'
                                                 placeholder='john@example.com'
+                                            />
+                                            <ValidationError
+                                                prefix='Email'
+                                                field='email'
+                                                errors={state.errors}
                                             />
                                         </div>
                                     </div>
@@ -177,8 +150,6 @@ export function Contact() {
                                                 type='tel' 
                                                 id='phone'    
                                                 name='phone'
-                                                value={formData.phone}
-                                                onChange={handleChange}
                                                 className='w-full px-4 py-3 bg-[#0F172A] border border-[#334155] text-white placeholder-slate-600 rounded-lg focus:ring-2 focus:ring-[#C9A24D] focus:border-transparent outline-none transition-all'
                                                 placeholder='(555) 123-4567'
                                             />
@@ -190,8 +161,6 @@ export function Contact() {
                                             <select 
                                                 name="businessType" 
                                                 id="businessType"
-                                                value={formData.businessType}
-                                                onChange={handleChange}
                                                 className='w-full px-4 py-3 bg-[#0F172A] border border-[#334155] text-white rounded-lg focus:ring-2 focus:ring-[#C9A24D] focus:border-transparent outline-none transition-all'
                                                 >
                                                     <option value="">Select...</option>
@@ -211,16 +180,23 @@ export function Contact() {
                                         <textarea 
                                             name="message" 
                                             id="message" 
-                                            value={formData.message}
-                                            onChange={handleChange}
                                             required
                                             rows={6}
                                             className='w-full px-4 py-3 bg-[#0F172A] border border-[#334155] text-white placeholder-slate-600 rounded-lg focus:ring-2 focus:ring-[#C9A24D] focus:border-transparent outline-none transition-all'
                                             placeholder='Tell us about your project...'
-                                            ></textarea>
+                                            >
+                                        </textarea>
+                                        <ValidationError
+                                            prefix='Message'
+                                            field='message'
+                                            errors={state.errors}
+                                        />
                                     </div>
 
-                                    <button className="w-full px-8 py-3 bg-[#C9A24D] text-[#0F172A] rounded-lg hover:bg-[#e3b75a] transition-all duration-300 flex items-center justify-center font-medium shadow-lg hover:shadow-xl">
+                                    <button 
+                                        type='submit'
+                                        disabled={state.submitting}
+                                        className="w-full px-8 py-3 bg-[#C9A24D] text-[#0F172A] rounded-lg hover:bg-[#e3b75a] transition-all duration-300 flex items-center justify-center font-medium shadow-lg hover:shadow-xl">
                                         Send Message
                                         <Send size={20} className='ml-2'/>
                                     </button>
@@ -233,3 +209,11 @@ export function Contact() {
         </section>
     )
 }
+
+function App() {
+    return (
+        <Contact />
+    )
+}
+
+export default App;
