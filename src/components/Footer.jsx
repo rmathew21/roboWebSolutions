@@ -19,12 +19,12 @@ export function Footer() {
     };
 
     return (
-        <footer className="bg-[#1E293B] text-white py-12">
+        <footer className="bg-[#080D14] border-t border-[#334155] text-white py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     <div className="md:col-span-2">
-                        <h3 className="text-2xl font-bold mb-4">Robo Web Solutions</h3>
-                        <p className="text-gray-400 mb-6 leading-relaxed">
+                        <h3 className="text-2xl font-bold mb-4">Robo Web <span className='text-[#C9A24D]'>Solutions</span></h3>
+                        <p className="text-slate-400 mb-6 leading-relaxed">
                             Specializing in front-end web development to help local businesses
                             modernize their online presence with cutting-edge technology.
                         </p>
@@ -38,7 +38,7 @@ export function Footer() {
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         aria-label={social.label}
-                                        className='w-10 h-10 bg-[#334155] rounded-lg flex items-center justify-center hover:bg-[#F59E0B] transition-colors'
+                                        className='w-10 h-10 bg-[#1E293B] border border-[#334155] rounded-lg flex items-center justify-center hover:bg-[#C9A24D] hover:border-[#C9A24D] transition-all duration-300'
                                     >
                                         <Icon size={20} />
                                     </a>
@@ -50,57 +50,27 @@ export function Footer() {
                     <div>
                         <h4 className="font-bold mb-4">Quick Links</h4>
                         <ul className="space-y-2">
-                            <li>
-                                <button 
-                                    onClick={() => scrollToSection('hero')}
-                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
+                            {['hero', 'about', 'projects', 'services', 'contact'].map((section) => (
+                                <li key={section}>
+                                    <button 
+                                        onClick={() => scrollToSection(section)}
+                                        className="text-slate-400 hover:text-[#C9A24D] transition-colors capitalize"
                                 >
-                                    Home
-                                </button>
-                            </li>
-                            <li>
-                                <button 
-                                    onClick={() => scrollToSection('about')}
-                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
-                                >
-                                    About
-                                </button>
-                            </li>
-                            <li>
-                                <button 
-                                    onClick={() => scrollToSection('projects')}
-                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
-                                >
-                                    Projects
-                                </button>
-                            </li>
-                            <li>
-                                <button 
-                                    onClick={() => scrollToSection('services')}
-                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
-                                >
-                                    Services
-                                </button>
-                            </li>
-                            <li>
-                                <button 
-                                    onClick={() => scrollToSection('contact')}
-                                    className="text-gray-400 hover:text-[#F59E0B] transition-colors"
-                                >
-                                    Contact
-                                </button>
-                            </li>
+                                        {section === 'hero' ? 'Home' : section.charAt(0).toUpperCase() + section.slice(1)}
+                                    </button>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="font-bold mb-4">Contacts</h4>
-                        <ul className="space-y-2 text-gray-400">
+                        <ul className="space-y-2 text-slate-400">
                             <li>Houston, TX</li>
                             <li>
                                 <a 
                                     href="tel:1234567890"
-                                    className='hover:text-[#F59E0B] transition-colors'
+                                    className='hover:text-[#C9A24D] transition-colors'
                                 >
                                     (555) 123-4567
                                 </a>
@@ -108,7 +78,7 @@ export function Footer() {
                             <li>
                                 <a 
                                     href="mailto:rob@robowebsolutions.com"
-                                    className='hover:text-[#F59E0B] transition-colors'
+                                    className='hover:text-[#C9A24D] transition-colors'
                                 >
                                     rob@robowebsolutions.com
                                 </a>
@@ -118,14 +88,14 @@ export function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-[#334155] flex flex-col md:flex-row justify-between items-center">
-                        <p className="text-gray-400 text-sm">
+                        <p className="text-slate-400 text-sm">
                             ©  {currentYear} Robo Web Solutions LLC. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
-                            <button className="text-gray-400 hover:text-[#F59E0B] transition-colors text-sm">
+                            <button className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm">
                                 Privacy Policy
                             </button>
-                            <button className="text-gray-400 hover:text-[#F59E0B] transition-colors text-sm">
+                            <button className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm">
                                 Terms of Service
                             </button>
                         </div>

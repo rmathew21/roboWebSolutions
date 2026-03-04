@@ -42,16 +42,17 @@ export function Services() {
     ];
 
     return (
-        <section id="services" className="py-20 bg-linear-to-br from-slate-900 via-slate-800 to-[#1c1405] relative overflow-hidden">
+        // <section id="services" className="py-20 bg-linear-to-br from-slate-900 via-slate-800 to-[#1c1405] relative overflow-hidden">
+        <section className="py-20 bg-[#0F172A] relative overflow-hidden" id="services">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center px-4 py-2 bg-[#FEF3C7] text-[#F59E0B] rounded-full mb-4">
+                    <div className="inline-flex items-center px-4 py-2 bg-[#C9A24D]/15 text-[#C9A24D] rounded-full mb-4">
                         <span className="text-sm font-medium">What We Offer</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                         Our Services
                     </h2>
-                    <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
+                    <p className="text-xl text-slate-400 max-w-2xl mx-auto">
                         Comprehensive front-end development services to bring your vision to life
                     </p>
                 </div>
@@ -62,20 +63,20 @@ export function Services() {
                         return (
                             <div
                                 key={index} 
-                                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2x transition-all duration-300 group hover:-translate-y-2">
-                                <div className="w-16 h-16 bg-linear-to-br from-[#F59E0B] to-[#F97316] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                    <Icon size={32} className="text-white" />
+                                className="bg-[#1E293B] p-8 rounded-2xl border border-[#334155] shadow-lg  hover:bg-[#334155] hover:border-[#C9A24D]/40 transition-all duration-300 group hover:-translate-y-2">
+                                <div className="w-16 h-16 bg-[#C9A24D]/15 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                    <Icon size={32} className="text-[#C9A24D]" />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#1E293B] mb-3">
+                                <h3 className="text-xl font-bold text-white mb-3">
                                     {service.title}
                                 </h3>
-                                <p className="text-[#64748B] mb-6 leading-relaxed">
+                                <p className="text-slate-400 mb-6 leading-relaxed">
                                     {service.description}
                                 </p>
                                 <ul className="space-y-2">
                                     {service.features.map((feature, idx) => (
-                                        <li key={idx} className="flex items-center text-sm text-[#64748B]">
-                                            <div className="w-1.5 h-1.5 bg-[#F59E0B] rounded-full mr-2"></div>
+                                        <li key={idx} className="flex items-center text-sm text-slate-400">
+                                            <div className="w-1.5 h-1.5 bg-[#C9A24D] rounded-full mr-2"></div>
                                             {feature}
                                         </li>
                                     ))}
@@ -86,10 +87,11 @@ export function Services() {
                 </div>
 
                 <div className="mt-16 bg-linear-to-r from-[#1E293B] to-[#334155] rounded-2xl p-12 text-center">
+                {/* <div className="mt-16 bg-[#1E293B] border border-[#334155] rounded-2xl p-12 text-center"> */}
                     <h3 className="text-3xl font-bold text-white mb-4">
                         Need Something Custom?
                     </h3>
-                    <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                    <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
                         Every business is unique. If you have specific requirements, we're happy to create a custom solution tailored to your needs.
                     </p>
                     <button 
@@ -97,7 +99,7 @@ export function Services() {
                             const element = document.getElementById('contact');
                             if (element) element.scrollIntoView({ behavior: 'smooth' });
                         }}
-                        className="px-8 py-4 bg-[#F59E0B] text-white rounded-lg hover:bg- transition-colors font-medium shadow-lg">
+                        className="px-8 py-4 bg-[#C9A24D] text-[#0F172A] rounded-lg hover:bg-[#e3b75a] transition-colors font-medium shadow-lg">
                             Let's Talk About Your Project
                     </button>
                 </div>

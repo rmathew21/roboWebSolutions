@@ -147,16 +147,24 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-[#FAF9F6]">
+    // <section id="projects" className="py-20 bg-[#FAF9F6]">
+    // <section id="projects" className="py-20 bg-linear-to-br from-[#0f172a] via-[#1e293b] to-[#020617] ">
+    // <section id="projects" className="py-20 bg-[#0f1f1c]">
+       /* <section id="projects" className="py-20 bg-linear-to-br from-[#0b0b0b] to-[#1a1a1a] "> */
+       <section id="projects" className="py-20 bg-[#0F172A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-[#FEF3C7] text-[#F59E0B] rounded-full mb-4">
+          {/* <div className="inline-flex items-center px-4 py-2 bg-[#FEF3C7] text-[#F59E0B] rounded-full mb-4">  */}
+          <div className="inline-flex items-center px-4 py-2 bg-[#C9A24D]/15 text-[#C9A24D] rounded-full mb-4">
+          
             <span className="text-sm font-medium">Our Portfolio</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4"> */}
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Recent Projects
           </h2>
-          <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
+          {/* <p className="text-xl text-[#64748B] max-w-2xl mx-auto"> */}
+          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Showcasing our work with local businesses across various industries
           </p>
         </div>
@@ -165,7 +173,8 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2"
+              // className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2"
+              className="group bg-[#1E293B] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border border-[#334155] hover:bg-[#334155] transition-all duration-300 cursor-pointer transform hover:-translate-y-2"
               onClick={() => setSelectedProject(project)}
             >
               <div className="relative h-64 overflow-hidden">
@@ -174,9 +183,11 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-[#1E293B] to-transparent opacity-60 group-hover:opacity-80 transition-opactiy"></div>
+                {/* <div className="absolute inset-0 bg-linear-to-t from-[#1E293B] to-transparent opacity-60 group-hover:opacity-80 transition-opactiy"></div> */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-block px-3 py-1 bg-[#F59E0B] text-white text-xs font-medium rounded-full mb-2">
+                  {/* <span className="inline-block px-3 py-1 bg-[#F59E0B] text-white text-xs font-medium rounded-full mb-2"> */}
+                  <span className="inline-block px-3 py-1 bg-[#C9A24D] text-black text-xs font-medium rounded-full mb-2">
                     {project.category}
                   </span>
                   <h3 className="text-white text-xl font-bold">
@@ -185,8 +196,9 @@ export function Projects() {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-[#64748B] mb-4">{project.description}</p>
-                <button className="inline-flex items-center text-[#F59E0B] font-medium group-hover:text-[#1E293B] transition-colors">
+                <p className="text-slate-400 mb-4 group-hover:text-slate-300 transition-colors">{project.description}</p>
+                {/* <button className="inline-flex items-center text-[#F59E0B] font-medium group-hover:text-[#1E293B] transition-colors"> */}
+                <button className="inline-flex items-center text-[#C9A24D] font-semibold group-hover:text-[#e3b75a] transition-colors">
                   View Details
                   <ArrowRight
                     size={16}
@@ -205,6 +217,9 @@ export function Projects() {
           onClose={() => setSelectedProject(null)}
         />
       )}
+
+      
+   
     </section>
   );
 }

@@ -10,6 +10,148 @@ export function Hero() {
   };
 
   return (
+    <section id="hero" className="relative min-h-screen pt-20 overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          // src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2400&q=60"
+          src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvZGV8ZW58MHx8MHx8fDA%3D"
+          alt=""
+          className="h-full w-full object-cover"
+          loading="eager"
+        />
+
+        {/* Readability overlay */}
+        <div className="absolute inset-0 bg-[#0F172A]/80" />
+
+        {/* Color overlay (adds “pop” without hurting readability) */}
+        <div className="absolute inset-0 bg-linear-to-br from-[#C9A24D]/20 via-[#0F172A]/10 to-[#1E293B]/30" />
+
+        {/* Optional: subtle texture */}
+        <div
+          className="absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.35) 1px, transparent 1px)",
+            backgroundSize: "64px 64px",
+          }}
+        />
+
+        {/* Optional: bottom fade into next section */}
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-[#0F172A] to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid lg:grid-cols-12 gap-12 items-center">
+          {/* Left: copy */}
+          <div className="lg:col-span-7">
+            <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 bg-[#C9A24D]/15 backdrop-blur border border-[#C9A24D]/25 text-[#C9A24D]">
+              <span className="mr-2">⚡</span>
+              <span className="text-sm font-medium tracking-wide">
+                Modern Web Solutions
+              </span>
+            </div>
+
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.05] tracking-tight">
+              Elevate Your{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10">Local Business</span>
+                <span className="absolute -inset-x-2 bottom-1 h-3 bg-[#C9A24D] rounded-full z-0" />
+              </span>{" "}
+              Online
+            </h1>
+
+            <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+              We specialize in front-end web development, helping local
+              businesses modernize their online presence with cutting-edge
+              technology and design.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button
+                onClick={() => scrollToSection("projects")}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-lg
+                         bg-[#C9A24D] text-[#0F172A] font-semibold
+                         hover:bg-[#e3b75a] transition-all duration-300
+                         shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                View Our Work
+                <span className="ml-2">→</span>
+              </button>
+
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-lg
+                         bg-white/10 backdrop-blur text-white
+                         border border-white/20
+                         hover:bg-[#C9A24D]/20 hover:border-[#C9A24D]/40  transition-all duration-300
+                         transform hover:-translate-y-1"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-400">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#C9A24D]" />
+                Fast turnaround
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#C9A24D]/60" />
+                Mobile-first + SEO-ready
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-slate-500" />
+                Modern stack builds
+              </div>
+            </div>
+          </div>
+
+          {/* Right: proof/cards (optional, keeps your “feature cards” vibe) */}
+          <div className="lg:col-span-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+              {/* <div className="bg-white/10 hover:bg-white/20 transition-colors backdrop-blur rounded-2xl p-6 border"> */}
+              <div className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-[#334155] shadow-lg hover:bg-[#334155] hover:border-[#C9A24D]/40 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              {/* <div className="bg-[#1E293B]/80 backdrop-blur rounded-2xl p-6 border border-[#334155] shadow-lg hover:bg-[#334155] hover:border-[#C9A24D]/40 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"> */}
+                <div className="w-12 h-12 rounded-lg bg-[#C9A24D]/15 flex items-center justify-center mb-4">
+                  <span className="text-[#C9A24D] text-xl">{"</>"}</span>
+                </div>
+                <h3 className="font-bold text-white mb-2">Clean Code</h3>
+                <p className="text-sm text-slate-400">
+                  Built with modern best practices
+                </p>
+              </div>
+
+              <div className="bg-[#1E293B]/80 backdrop-blur rounded-2xl p-6 border border-[#334155] shadow-lg hover:bg-[#334155] hover:border-[#C9A24D]/40 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              {/* <div className="bg-linear-to-r from-[#1E293B] to-[#334155] backdrop-blur rounded-2xl p-6 border border-[#334155] shadow-lg hover:bg-[#334155] hover:border-[#C9A24D]/40 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"> */}
+                <div className="w-12 h-12 rounded-lg bg-[#C9A24D]/15 flex items-center justify-center mb-4">
+                  <span className="text-[#C9A24D] text-xl">⚡</span>
+                </div>
+                <h3 className="font-bold text-white mb-2">Lightning Fast</h3>
+                <p className="text-sm text-slate-400">
+                  Optimized performance
+                </p>
+              </div>
+
+              {/* <div className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-[#334155] shadow-lg hover:bg-[#334155] hover:border-[#C9A24D]/40 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"> */}
+              <div className="bg-linear-to-r from-[#1E293B] to-[#334155] backdrop-blur rounded-2xl p-6 border border-[#334155] shadow-lg hover:bg-[#334155] hover:border-[#C9A24D]/40 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+                <div className="w-12 h-12 rounded-lg bg-[#C9A24D]/15 flex items-center justify-center mb-4">
+                  <span className="text-[#C9A24D] text-xl">★</span>
+                </div>
+                <h3 className="font-bold text-white mb-2">
+                  Conversion Focused
+                </h3>
+                <p className="text-sm text-slate-400">
+                  Designed to generate leads
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     //   <section
     //     id="hero"
     //     className="min-h-screen flex items-center bg-linear-to-br from-[#FAF9F6] to-[#F3F4F6] pt-20"
@@ -228,144 +370,5 @@ export function Hero() {
     //     </div>
     //   </section>
     // );
-
-    <section id="hero" className="relative min-h-screen pt-20 overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img
-          // src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2400&q=60"
-          src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvZGV8ZW58MHx8MHx8fDA%3D"
-          alt=""
-          className="h-full w-full object-cover"
-          loading="eager"
-        />
-
-        {/* Readability overlay */}
-        <div className="absolute inset-0 bg-slate-950/65" />
-
-        {/* Color overlay (adds “pop” without hurting readability) */}
-        <div className="absolute inset-0 bg-linear-to-br from-amber-500/25 via-slate-900/10 to-sky-500/20" />
-
-        {/* Optional: subtle texture */}
-        <div
-          className="absolute inset-0 opacity-[0.08]"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.35) 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
-          }}
-        />
-
-        {/* Optional: bottom fade into next section */}
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-slate-950/70 to-transparent" />
-      </div>
-
-      {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
-          {/* Left: copy */}
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 bg-white/10 backdrop-blur border border-white/15 text-white">
-              <span className="mr-2">⚡</span>
-              <span className="text-sm font-medium tracking-wide">
-                Modern Web Solutions
-              </span>
-            </div>
-
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.05] tracking-tight">
-              Elevate Your{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10">Local Business</span>
-                <span className="absolute -inset-x-2 bottom-1 h-3 bg-amber-400/40 rounded-full z-0" />
-              </span>{" "}
-              Online
-            </h1>
-
-            <p className="text-xl text-slate-200/90 mb-8 leading-relaxed max-w-2xl">
-              We specialize in front-end web development, helping local
-              businesses modernize their online presence with cutting-edge
-              technology and design.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={() => scrollToSection("projects")}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-lg
-                         bg-amber-400 text-slate-950 font-semibold
-                         hover:bg-amber-300 transition-all duration-300
-                         shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                View Our Work
-                <span className="ml-2">→</span>
-              </button>
-
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-lg
-                         bg-white/10 backdrop-blur text-white
-                         border border-white/20
-                         hover:bg-white hover:text-slate-950 transition-all duration-300
-                         transform hover:-translate-y-1"
-              >
-                Get Started
-              </button>
-            </div>
-
-            <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-200/80">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-amber-400" />
-                Fast turnaround
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-sky-400" />
-                Mobile-first + SEO-ready
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-white/70" />
-                Modern stack builds
-              </div>
-            </div>
-          </div>
-
-          {/* Right: proof/cards (optional, keeps your “feature cards” vibe) */}
-          <div className="lg:col-span-5">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
-              {/* <div className="bg-white/10 hover:bg-white/20 transition-colors backdrop-blur rounded-2xl p-6 border"> */}
-              <div className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/15 shadow-lg hover:bg-white/20 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
-                <div className="w-12 h-12 rounded-lg bg-amber-400/20 flex items-center justify-center mb-4">
-                  <span className="text-amber-300 text-xl">{"</>"}</span>
-                </div>
-                <h3 className="font-bold text-white mb-2">Clean Code</h3>
-                <p className="text-sm text-slate-200/85">
-                  Built with modern best practices
-                </p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/15 shadow-lg hover:bg-white/20 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
-                <div className="w-12 h-12 rounded-lg bg-sky-400/20 flex items-center justify-center mb-4">
-                  <span className="text-sky-300 text-xl">⚡</span>
-                </div>
-                <h3 className="font-bold text-white mb-2">Lightning Fast</h3>
-                <p className="text-sm text-slate-200/85">
-                  Optimized performance
-                </p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/15 shadow-lg hover:bg-white/20 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
-                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-4">
-                  <span className="text-white text-xl">★</span>
-                </div>
-                <h3 className="font-bold text-white mb-2">
-                  Conversion Focused
-                </h3>
-                <p className="text-sm text-slate-200/85">
-                  Designed to generate leads
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
