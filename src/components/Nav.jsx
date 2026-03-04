@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import rwsLogo from "@/assets/rwsLogo.png"
+import rwsLogoText from "@/assets/rwsLogoWOTextWhiteBody.svg";
 
 export function Nav() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +41,7 @@ export function Nav() {
                 <div className="flex justify-between items-center py-4">
                     <a href="/" className="flex items-center gap-3">
                         <img 
-                            src={rwsLogo} 
+                            src={rwsLogoText} 
                             alt="Robo Web Solutions logo" 
                             className='h-full max-h-18 w-auto object-contain'
                         />
