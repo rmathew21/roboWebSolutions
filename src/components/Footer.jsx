@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import "@fontsource/orbitron/700.css";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -23,7 +24,7 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     <div className="md:col-span-2">
-                        <h3 className="text-2xl font-bold mb-4">Robo Web <span className='text-[#C9A24D]'>Solutions</span></h3>
+                        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Orbitron', sans-serif" }}>Robo Web <span className='text-[#C9A24D]'>Solutions</span></h3>
                         <p className="text-slate-400 mb-6 leading-relaxed">
                             Specializing in front-end web development to help local businesses
                             modernize their online presence with cutting-edge technology.
