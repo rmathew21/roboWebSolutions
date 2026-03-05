@@ -18,7 +18,9 @@ export function Nav() {
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const navHeight = 40;
+            const top = element.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top, behavior: 'smooth' });
             setIsMobileMenuOpen(false);
         }
     };

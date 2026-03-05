@@ -27,7 +27,6 @@ export function About() {
 
     return (
         <section id="about" className="py-20 bg-[#0F172A]">
-        {/* <section id="about" className="py-20 bg-linear-to-b from-[#0f172a] to-[#111827]"> */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
