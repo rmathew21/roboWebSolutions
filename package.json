@@ -28,6 +28,7 @@
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.71.1",
     "react-resizable-panels": "^4.6.4",
+    "react-router-dom": "^7.13.1",
     "recharts": "^2.15.4",
     "tailwind-merge": "^3.4.0",
     "tw-merge": "^0.0.1-alpha.3",

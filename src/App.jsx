@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
-import { Nav } from './components/Nav';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { ProjectModal } from './components/ProjectModal';
-import { Projects } from './components/Projects';
-import { Services } from './components/Services';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import AllProjects from './pages/AllProjects';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+
 
 export default function App() {
   useEffect(() => {
@@ -17,16 +15,11 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6]">
-      <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/all-projects' element={<AllProjects />} />
+      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+      <Route path='/terms-of-service' element={<TermsOfService />} />
+    </Routes>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import "@fontsource/orbitron/700.css";
+import { Link } from 'react-router-dom';
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -93,12 +94,22 @@ export function Footer() {
                             ©  {currentYear} Robo Web Solutions LLC. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
-                            <button className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm">
+                            {/* <button className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm">
                                 Privacy Policy
-                            </button>
-                            <button className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm">
+                            </button> */}
+                            <Link
+                                className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm"
+                                to="/privacy-policy">
+                                    Privacy Policy
+                            </Link>
+                            {/* <button className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm">
                                 Terms of Service
-                            </button>
+                            </button> */}
+                            <Link
+                                className="text-slate-400 hover:text-[#C9A24D] transition-colors text-sm" 
+                                to="/terms-of-service">
+                                    Terms of Service
+                            </Link>
                         </div>
                 </div>
             </div>

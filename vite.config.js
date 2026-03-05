@@ -9,4 +9,7 @@ export default defineConfig({
     react(), 
     tsconfigPaths({ projects: ["./jsconfig.json"] }), 
     tailwindcss()],
+  server: {
+    historyApiFallback: true,
+  }
 });
