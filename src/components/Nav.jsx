@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import rwsLogo from "@/assets/rwsLogo.png"
-import rwsLogoText from "@/assets/rwsLogoWOTextWhiteBody.svg";
+import rwsLogoNoText from "@/assets/rwsLogoWOTextWhiteBody.svg";
+import "@fontsource/orbitron/700.css";
 
 export function Nav() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -39,14 +39,16 @@ export function Nav() {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    <a href="/" className="flex items-center gap-3">
+                    <a href="/" className="flex items-center gap-7">
                         <img 
-                            src={rwsLogoText} 
+                            src={rwsLogoNoText} 
                             alt="Robo Web Solutions logo" 
-                            className='h-full max-h-18 w-auto object-contain'
+                            className='h-full max-h-18 w-auto object-contain -translate-y-2'
                         />
-                        <span className="text-2xl tracking-wide font-bold text-white hover:text-[#C9A24D] transition-colors">
-                            Robo Web Solutions
+                        <span 
+                            className="text-2xl tracking-wide font-bold text-white hover:text-[#C9A24D] transition-colors" 
+                            style={{ fontFamily: "'Orbitron', sans-serif" }}> 
+                                Robo Web Solutions
                         </span>
                     </a>
                     
