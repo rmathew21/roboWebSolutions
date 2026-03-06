@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import "@fontsource/orbitron/700.css";
 import { Link } from 'react-router-dom';
 
-export function Footer() {
+export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
