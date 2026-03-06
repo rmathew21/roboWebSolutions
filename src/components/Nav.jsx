@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import rwsLogoNoText from "@/assets/rwsLogoWOTextWhiteBody.svg";
 import "@fontsource/orbitron/700.css";
+import { scrollToElement } from '@/lib/utils';
 
 export default function Nav() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -20,15 +21,13 @@ export default function Nav() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // const scrollToSection = (sectionId) => {
-    //     const element = document.getElementById(sectionId);
-    //     if (element) {
-    //         const navHeight = 40;
-    //         const top = element.getBoundingClientRect().top + window.scrollY - navHeight;
-    //         window.scrollTo({ top, behavior: 'smooth' });
-    //         setIsMobileMenuOpen(false);
-    //     }
-    // };
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            scrollToElement(element);
+            setIsMobileMenuOpen(false);
+        }
+    };
 
     const navLinks = [
         // { label: 'Home', id: 'hero' },
@@ -40,7 +39,7 @@ export default function Nav() {
 
     const handleNavClick = (id) => {
         if (location.pathname === '/') {
-            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+            scrollToSection(id);
         } else {
             navigate(`/#${id}`);
         }
