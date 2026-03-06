@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import AllProjects from './pages/AllProjects';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -16,10 +17,12 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/all-projects' element={<AllProjects />} />
-      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-      <Route path='/terms-of-service' element={<TermsOfService />} />
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='all-projects' element={<AllProjects />} />
+        <Route path='privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='terms-of-service' element={<TermsOfService />} />
+      </Route>
     </Routes>
   );
 }

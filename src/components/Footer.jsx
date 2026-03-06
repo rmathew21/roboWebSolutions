@@ -13,12 +13,20 @@ export default function Footer() {
         { icon: Mail, href: 'mailto:rob@robowebsolutions.com', label: 'Email' },
     ];
 
-    const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // const scrollToSection = (sectionId) => {
+    //     const element = document.getElementById(sectionId);
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    //     }
+    // };
+
+    const handleNavClick = (id) => {
+        if (location.pathname === '/') {
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            Navigate(`/#${id}`);
         }
-    };
+    }
 
     return (
         <footer className="bg-[#080D14] border-t border-[#334155] text-white py-12">
@@ -55,7 +63,7 @@ export default function Footer() {
                             {['hero', 'about', 'projects', 'services', 'contact'].map((section) => (
                                 <li key={section}>
                                     <button 
-                                        onClick={() => scrollToSection(section)}
+                                        onClick={() => handleNavClick(section)}
                                         className="text-slate-400 hover:text-[#C9A24D] transition-colors capitalize"
                                 >
                                         {section === 'hero' ? 'Home' : section.charAt(0).toUpperCase() + section.slice(1)}

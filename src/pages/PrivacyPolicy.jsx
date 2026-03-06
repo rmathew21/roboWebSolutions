@@ -323,12 +323,12 @@ export default function PrivacyPolicy() {
           </section>
         </main>
 
-        <footer className="pp-footer">
+        {/* <footer className="pp-footer">
             <p>
                 &copy; 2026 Robo Web Solutions. All rights reserved. &nbsp;·&nbsp;{" "}
                 <a href="https://www.robowebsolutions.com/">https://www.robowebsolutions.com/</a>
             </p>
-        </footer>
+        </footer> */}
       </div>
     </>
   );
