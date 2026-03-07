@@ -10,3 +10,12 @@ export function scrollToElement(el) {
   const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
   window.scrollTo({ top, behavior: 'smooth' });
 }
+
+export function handleSectionClick(e, id) {
+  e.preventDefault();
+  const el = document.getElementById(id);
+  if (!el) return;
+  const navHeight = 120;
+  const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+  window.scrollTo({ top, behavior: "smooth" });
+};

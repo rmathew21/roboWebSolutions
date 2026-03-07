@@ -167,7 +167,7 @@ export default function PrivacyPolicy() {
           <h1 className="pp-title">Privacy Policy</h1>
           <p className="pp-meta">
             Robo Web Solutions &nbsp;·&nbsp; Effective Date: March 5, 2026
-            &nbsp;·&nbsp; Last Updated: March 4, 2026
+            &nbsp;·&nbsp; Last Updated: March 5, 2026
           </p>
         </header>
 
