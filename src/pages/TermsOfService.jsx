@@ -207,6 +207,33 @@ export default function TermsOfService() {
               .animate-in-delay-1 { animation-delay: 0.1s; opacity: 0; }
               .animate-in-delay-2 { animation-delay: 0.2s; opacity: 0; }
               .animate-in-delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+              @media (max-width: 768px) {
+                .tos-layout {
+                    grid-template-columns: 1fr !important;
+                }
+                .tos-sidebar {
+                    display: none;
+                }
+                .tos-main {
+                    padding: 80px 20px 60px !important;
+                  }
+                  .tos-hero-title {
+                    font-size: 36px !important;
+                  }
+                  .tos-hero-meta {
+                    flex-direction: column !important;
+                    gap: 12px !important;
+                  }
+                  .tos-meta-divider {
+                    width: 100% !important;
+                    height: 1px !important;
+                  }
+                  .tos-footer-banner-inner {
+                    flex-direction: column !important;
+                    align-items: flex-start !important;
+                  }
+            }
             `}
             </style>
             
@@ -234,8 +261,8 @@ export default function TermsOfService() {
                 </div>
             </header> */}
             
-            <div style={styles.layout} className="grid-bg tos-root">
-              <aside style={styles.sidebar}>
+            <div style={styles.layout} className="grid-bg tos-root tos-layout">
+              <aside style={styles.sidebar} className="tos-sidebar">
                 <div style={styles.sidebarSticky}>
                     <p style={styles.sidebarLabel}>Sections</p>
                     <nav style={styles.navList}>
@@ -646,4 +673,9 @@ const styles = {
       color: "#445",
       letterSpacing: "0.04em",
     },
+    
+    
+    
   };
+
+ 
