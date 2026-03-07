@@ -2,6 +2,8 @@ import React from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import "@fontsource/orbitron/700.css";
 import { Link } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { scrollToElement } from '@/lib/utils';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -13,18 +15,22 @@ export default function Footer() {
         { icon: Mail, href: 'mailto:rob@robowebsolutions.com', label: 'Email' },
     ];
 
-    // const scrollToSection = (sectionId) => {
-    //     const element = document.getElementById(sectionId);
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    //     }
-    // };
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            scrollToElement(element);
+            setIsMobileMenuOpen(false);
+        }
+    };
+
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleNavClick = (id) => {
         if (location.pathname === '/') {
-            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+            scrollToSection(id);
         } else {
-            Navigate(`/#${id}`);
+            navigate(`/#${id}`);
         }
     }
 
