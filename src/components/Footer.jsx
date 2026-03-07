@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import "@fontsource/orbitron/700.css";
 import { Link } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { scrollToElement } from '@/lib/utils';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const setIsMobileMenuOpen = useState(false);
 
     const socialLinks = [
         { icon: Github, href: 'https://github.com/rmathew21', label: 'Github' },
