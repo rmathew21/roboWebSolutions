@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { handleSectionClick } from '@/lib/utils';
 
 export default function PrivacyPolicy() {
   const sections = [
@@ -58,19 +59,13 @@ export default function PrivacyPolicy() {
     },
     {
       id: "contact-us",
-      number: "01",
+      number: "10",
       title: "Contact Us",
       content: `If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your information, please reach out to us. \n\nRobo Web Solutions\nHouston, Texas Area\nWebsite: https://www.robowebsolutions.com/`,
     },
   ];
 
   const [activeSection, setActiveSection] = React.useState(null);
-
-  const handleSectionClick = (e, id) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   return (
     <div style={styles.page}>

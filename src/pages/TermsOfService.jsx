@@ -134,7 +134,7 @@ export default function TermsOfService() {
     const [activeSection, setActiveSection] = useState(null);
 
     return (
-        <div style={StyleSheet.page}>
+        <div style={styles.page}>
             <style>{`
              @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
 
@@ -147,8 +147,6 @@ export default function TermsOfService() {
              ::-webkit-scrollbar-track { background: #0d1117; }
              ::-webkit-scrollbar-thumb { background: #00e5f44; border-radius: 2px }
             
-             
-
              .tos-section {
                 transition: all 0.3s ease;
                 cursor: default;
@@ -240,30 +238,6 @@ export default function TermsOfService() {
             }
             `}
             </style>
-            
-            {/* <header style={styles.header}>
-                <div style={styles.headerInner}>
-                    <div style={styles.logo}>
-                        <div style={styles.logoIcon}>
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                                <circle cx="12" cy="8" r="4" stroke="#00e5ff" strokeWidth="1.5"/>
-                                <rect x="8" y="13" width="8" height="7" rx="2" stroke="#00e5ff" strokeWidth="1.5"/>
-                                <path d="M5 16h2M17 16h2" stroke="#00e5ff" strokeWidth="1.5" strokeLinecap="round"/>
-                                <circle cx="10" cy="8" r="1" fill="#00e5ff"/>
-                                <circle cx="14" cy="8" r="1" fill="#00e5ff"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div style={styles.logoName}>Robo Web Solutions</div>
-                            <div style={styles.logoTag}>TERMS OF SERVICE</div>
-                        </div>
-                    </div>
-                    <div style={styles.headerMeta}>
-                        <span style={styles.metaBadge}>v2.1</span>
-                        <span style={styles.metaDate}>Effective: January 1, 2026</span>
-                    </div>
-                </div>
-            </header> */}
             
             <div style={styles.layout} className="grid-bg tos-root tos-layout">
               <aside style={styles.sidebar} className="tos-sidebar">
@@ -364,12 +338,6 @@ export default function TermsOfService() {
                             </a>
                         </div>
                     </div>
-                    {/* <footer style={styles.footer}>
-                        <p>©2026 Robo Web Solutions. All rights reserved.</p>
-                        <p style={{ marginTop: 4, color: "#334" }}>
-                            These terms were last revised on January 1, 2026.
-                        </p>
-                    </footer> */}
               </main>
             </div>
         </div>    
