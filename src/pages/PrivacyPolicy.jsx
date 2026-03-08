@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       id: "information-we-collect",
       number: "02",
       title: "Information We Collect",
-      content: `We only collect personal information that you voluntarily provide to us. This occurs when you fill out the contact form on our website. The information you submit may include:\n\n·Your name\n· Your email address\n· Your phone number (if provided\n· The message or inquiry you submit\n· Any other details you choose to include in your message\n\nWe do not collect any sensitive personal information (such as financial details, Social Security numbers, or health information) through our website.`,
+      content: `We only collect personal information that you voluntarily provide to us. This occurs when you fill out the contact form on our website. The information you submit may include:\n\n· Your name\n· Your email address\n· Your phone number (if provided\n· The message or inquiry you submit\n· Any other details you choose to include in your message\n\nWe do not collect any sensitive personal information (such as financial details, Social Security numbers, or health information) through our website.`,
     },
     {
       id: "how-we-use",
