@@ -217,6 +217,7 @@ export default function TermsOfService() {
                 }
                 .tos-main {
                     padding: 80px 20px 60px !important;
+                    padding-top: 120px !important;
                   }
                   .tos-hero-title {
                     font-size: 36px !important;
@@ -228,6 +229,9 @@ export default function TermsOfService() {
                   .tos-meta-divider {
                     width: 100% !important;
                     height: 1px !important;
+                  }
+                  .tos-section {
+                    padding: 20px 16px !important;
                   }
                   .tos-footer-banner-inner {
                     flex-direction: column !important;
@@ -293,23 +297,23 @@ export default function TermsOfService() {
                     </div>
               </aside>
 
-              <main style={styles.main}>
+              <main style={styles.main} className="tos-main">
                     <div style={styles.hero} className="animate-in">
                         <div style={styles.heroEyebrow}>
                             <span style={styles.eyebrowDot} />
                                 LEGAL DOCUMENT
                         </div>  
-                        <h1 style={styles.heroTitle}>Terms of Service</h1>
+                        <h1 style={styles.heroTitle} className="tos-hero-title">Terms of Service</h1>
                         <p style={styles.heroSubtitle}>
                             Please read these terms carefully before using Robo Web Solutions' services.
                             These terms govern your use of our platform, products, and professional services.
                         </p>
-                        <div style={styles.heroMeta}>
+                        <div style={styles.heroMeta} className="tos-hero-meta">
                             <div style={styles.metaItem}>
                                 <span style={styles.metaLabel}>Last Updated</span>
                                 <span style={styles.metaValue}>March 6, 2026</span>
                             </div>
-                            <div style={styles.metaDivider} />
+                            <div style={styles.metaDivider} className="tos-meta-divider" />
                             <div style={styles.metaItem}>
                                 <span style={styles.metaLabel}>Jurisdiction</span>
                                 <span style={styles.metaValue}>Texas, USA</span>
@@ -350,7 +354,7 @@ export default function TermsOfService() {
                     </div>
 
                     <div style={styles.footerBanner}>
-                        <div style={styles.footerBannerInner}>
+                        <div style={styles.footerBannerInner} className="tos-footer-banner-inner">
                             <div>
                                 <p style={styles.footerBannerTitle}>Have questions about these terms?</p>
                                 <p style={styles.footerBannerSub}>Our legal team is here to help clarify anything.</p>
