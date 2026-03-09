@@ -24,6 +24,12 @@ export default function Nav() {
     }, []);
 
     useEffect(() => {
+        const handler = () => setIsMobileMenuOpen(false);
+        window.addEventListener("closeMobileMenu", handler);
+        return () => window.removeEventListener("closeMobileMenu", handler);
+      }, []);
+
+    useEffect(() => {
         if (!isMobileMenuOpen) return;
 
         const handleClickOutside = (e) => {
@@ -76,6 +82,7 @@ export default function Nav() {
     };
 
     const handleNavClick = (id) => {
+        setIsMobileMenuOpen(false);
         if (location.pathname === '/') {
             scrollToSection(id);
         } else {
