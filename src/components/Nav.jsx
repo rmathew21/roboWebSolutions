@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -13,6 +13,8 @@ export default function Nav() {
     const navigate = useNavigate();
     const location = useLocation();
 
+    const mobileMenuRef = useRef(null);
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20);
@@ -20,6 +22,23 @@ export default function Nav() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    useEffect(() => {
+        if (!isMobileMenuOpen) return;
+
+        const handleClickOutside = (e) => {
+            if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+                setIsMobileMenuOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener("touchstart", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("touchstart", handleClickOutside);
+        };
+    }, [isMobileMenuOpen]);
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -54,6 +73,7 @@ export default function Nav() {
 
     return (
         <header 
+            ref={mobileMenuRef}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 isScrolled ? 'bg-[#0F172A]/95 backdrop-blur shadow-lg border-b border-[#334155] ' : 'bg-transparent'
             }`}
