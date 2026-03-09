@@ -40,12 +40,24 @@ export default function Nav() {
         };
     }, [isMobileMenuOpen]);
 
+    // const scrollToSection = (sectionId) => {
+    //     const element = document.getElementById(sectionId);
+    //     if (element) {
+    //         scrollToElement(element);
+    //         setIsMobileMenuOpen(false);
+    //     }
+    // };
+
     const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            scrollToElement(element);
-            setIsMobileMenuOpen(false);
-        }
+        setIsMobileMenuOpen(false);
+        setTimeout(() => {
+            const element = document.getElementById(sectionId);
+            if (!element) return;
+            const isMobile = window.innerWidth < 768;
+            const navHeight = isMobile ? 72 : 120;
+            const top = element.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }, 50);
     };
 
     const navLinks = [
