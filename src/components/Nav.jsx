@@ -37,6 +37,13 @@ export default function Nav() {
         { label: 'Contact', id: 'contact' },
     ];
 
+    const handleLogoClick = (e) => {
+        if (location.pathname === '/') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+
     const handleNavClick = (id) => {
         if (location.pathname === '/') {
             scrollToSection(id);
@@ -53,7 +60,7 @@ export default function Nav() {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    <Link to="/" className="flex items-center gap-7">
+                    <Link to="/" onClick={handleLogoClick} className="flex items-center gap-7">
                         <img 
                             src={rwsLogoNoText} 
                             alt="Robo Web Solutions logo" 
