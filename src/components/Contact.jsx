@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, MapPin, Send, Check } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export function Contact() {
     const [state, handleFormSubmit] = useForm("xzdanykl");
+    const thankYouRef = useRef(null);
+
+    useEffect(() => {
+        if (state.succeeded && thankYouRef.current) {
+            thankYouRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }, [state.succeeded]);
 
     const contactInfo = [
         {
@@ -94,7 +101,7 @@ export function Contact() {
                     <div className="lg:col-span-2">
                         <form onSubmit={handleFormSubmit} className="bg-[#1E293B] border border-[#334155] p-8 rounded-2xl shadow-lg">
                             {state.succeeded ? (
-                                <div className="text-center py-12">
+                                <div ref={thankYouRef} className="text-center py-12">
                                     <div className="w-20 h-20 bg-green-900/30 border border-green-700/40 rounded-full flex items-center justify-center mx-auto mb-6">
                                         <Check size={40} className="text-green-400" />
                                     </div>
