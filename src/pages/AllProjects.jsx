@@ -322,7 +322,7 @@ export default function AllProjects() {
           style={{
             maxWidth: 1200,
             margin: "0 auto",
-            padding: "48px 24px 100px",
+            padding: "120px 24px 100px",
           }}
         >
           {/* ── Back button ── */}
