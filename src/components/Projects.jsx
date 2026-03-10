@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { ProjectModal } from "./ProjectModal";
 import legacyMockUp from "../assets/legacyLifeMockup.png";
-import saveApeImg2 from "../assets/saveApeMockup2.png"
-import freeSwingMockup from "../assets/freeSwingMockup.png"
-import nexGenMockup from "../assets/nexGenMockup.png"
-import sweetTreatMockup from "../assets/sweetNTreatsMockup.png"
+import saveApeImg2 from "../assets/saveApeMockup2.png";
+import freeSwingMockup from "../assets/freeSwingMockup.png";
+import nexGenMockup from "../assets/nexGenMockup.png";
+import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const navigate = useNavigate();
 
   const projects = [
     {
@@ -27,17 +29,17 @@ export function Projects() {
         "React Router",
         "Formspree",
       ],
-    //   results: [
-    //     "150% increase in online reservations",
-    //     "85% mobile user engagement",
-    //     "Reduced phone inquiries by 40%",
-    //   ],
+      //   results: [
+      //     "150% increase in online reservations",
+      //     "85% mobile user engagement",
+      //     "Reduced phone inquiries by 40%",
+      //   ],
       challenge:
         "Legacy Life Agency was a new financial-services brand without an online presence. They needed a website that would build trust and credibility in the life-insurance market, while explaining complex services like term life, whole life and wealth planning in a simple language.",
       solution:
         "I designed a developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
       liveUrl: "https://www.legacylifeagency.net/",
-      liveLabel: "Visit Live Site", 
+      liveLabel: "Visit Live Site",
     },
     {
       id: 2,
@@ -48,18 +50,23 @@ export function Projects() {
         "A community advocacy website built to help parents and neighbors rally support for Austin Parkway Elementary, providing updates, petitions, and tools to contact school board members and protect a local school from closure.",
       fullDescription:
         "SaveAPE.org is a grassroots community website built to help parents, teachers, and neighbors organize around the potential closure of Austin Parkway Elementary in Fort Bend ISD. The site provides clear information about proposed school closures, upcoming board meetings, and ways community members can take action, such as signing petitions, emailing trustees, and speaking at public hearings.",
-      technologies: ["Squarespace", "Custom CSS", "Google Form Integration", "Change.org Petition Embed"],
-    //   results: [
-    //     "200+ weekly online orders",
-    //     "1,000+ loyalty members enrolled",
-    //     "4.9/5 customer satisfaction",
-    //   ],
+      technologies: [
+        "Squarespace",
+        "Custom CSS",
+        "Google Form Integration",
+        "Change.org Petition Embed",
+      ],
+      //   results: [
+      //     "200+ weekly online orders",
+      //     "1,000+ loyalty members enrolled",
+      //     "4.9/5 customer satisfaction",
+      //   ],
       challenge:
         "The SaveAPE community needed a website on extremely short notice after Fort Bend ISD announced a proposed school closure with very little time before the board vote. Parents and neighbors needed a central place to get accurate information, sign petitions, submit feedback, and contact trustees. The site had to be built quickly, be easy for volunteers to update, and work perfectly on mobile devices.",
       solution:
         "I rapidly designed and launched SaveAPE.org using Squarespace to ensure a fast turnaround while still delivering a clean, professional site the community could trust. The site integrated Google Forms for feedback collection and Change.org petitions to coordinate grassroots advocacy efforts. I structured the layout around clear calls-to-action, mobile-friendly navigation, and easy-to-update content so volunteers could keep the community informed as deadline approached.",
-        liveUrl: "https://www.saveape.org/",
-        liveLabel: "Visit Live Site", 
+      liveUrl: "https://www.saveape.org/",
+      liveLabel: "Visit Live Site",
     },
     {
       id: 3,
@@ -85,8 +92,8 @@ export function Projects() {
         "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
       solution:
         "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
-        liveUrl: "https://freeswing.app/",
-        liveLabel: "Visit Live Site", 
+      liveUrl: "https://freeswing.app/",
+      liveLabel: "Visit Live Site",
     },
     {
       id: 4,
@@ -113,14 +120,14 @@ export function Projects() {
         "NexGen Professional Solutions needed a professional website that clearly explained complex consulting services and built credibility with enterprise clients.",
       solution:
         "I created a modern, responsive website with clear service sections, strong branding,a nd optimized contact flows to convert visitors into leads.",
-        liveUrl: "https://www.nexgenprosol.com/",
-        liveLabel: "Visit Live Site", 
+      liveUrl: "https://www.nexgenprosol.com/",
+      liveLabel: "Visit Live Site",
     },
     {
       id: 5,
       title: "Sweets N' Treats",
       category: "Food",
-      image: sweetTreatMockup,  
+      image: sweetTreatMockup,
       description:
         "Sweets N' Treats is a mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo galleries while making it easy for customers to inquire and place orders online.",
       fullDescription:
@@ -130,7 +137,7 @@ export function Projects() {
         "Bootstrap + Custom CSS",
         "JavaScript",
         "Responsive Mobile-First Design",
-        "Image Optimization"
+        "Image Optimization",
       ],
       // results: [
       //   "45% increase in new client bookings",
@@ -141,29 +148,21 @@ export function Projects() {
         "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
       solution:
         "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
-        liveUrl: "https://www.sweetsntreatsbakery.com/",
-      liveLabel: "Visit Live Site", 
+      liveUrl: "https://www.sweetsntreatsbakery.com/",
+      liveLabel: "Visit Live Site",
     },
   ];
 
   return (
-    // <section id="projects" className="py-20 bg-[#FAF9F6]">
-    // <section id="projects" className="py-20 bg-linear-to-br from-[#0f172a] via-[#1e293b] to-[#020617] ">
-    // <section id="projects" className="py-20 bg-[#0f1f1c]">
-       /* <section id="projects" className="py-20 bg-linear-to-br from-[#0b0b0b] to-[#1a1a1a] "> */
-       <section id="projects" className="py-20 bg-[#0F172A]">
+    <section id="projects" className="py-20 bg-[#0F172A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          {/* <div className="inline-flex items-center px-4 py-2 bg-[#FEF3C7] text-[#F59E0B] rounded-full mb-4">  */}
           <div className="inline-flex items-center px-4 py-2 bg-[#C9A24D]/15 text-[#C9A24D] rounded-full mb-4">
-          
             <span className="text-sm font-medium">Our Portfolio</span>
           </div>
-          {/* <h2 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4"> */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Recent Projects
           </h2>
-          {/* <p className="text-xl text-[#64748B] max-w-2xl mx-auto"> */}
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Showcasing our work with local businesses across various industries
           </p>
@@ -183,10 +182,8 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* <div className="absolute inset-0 bg-linear-to-t from-[#1E293B] to-transparent opacity-60 group-hover:opacity-80 transition-opactiy"></div> */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  {/* <span className="inline-block px-3 py-1 bg-[#F59E0B] text-white text-xs font-medium rounded-full mb-2"> */}
                   <span className="inline-block px-3 py-1 bg-[#C9A24D] text-black text-xs font-medium rounded-full mb-2">
                     {project.category}
                   </span>
@@ -196,8 +193,9 @@ export function Projects() {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-slate-400 mb-4 group-hover:text-slate-300 transition-colors">{project.description}</p>
-                {/* <button className="inline-flex items-center text-[#F59E0B] font-medium group-hover:text-[#1E293B] transition-colors"> */}
+                <p className="text-slate-400 mb-4 group-hover:text-slate-300 transition-colors">
+                  {project.description}
+                </p>
                 <button className="inline-flex items-center text-[#C9A24D] font-semibold group-hover:text-[#e3b75a] transition-colors">
                   View Details
                   <ArrowRight
@@ -209,6 +207,22 @@ export function Projects() {
             </div>
           ))}
         </div>
+
+        <div className="mt-16 flex flex-col items-center gap-4">
+          <p className="text-slate-500 text-sm tacking-wide">
+            Want to see everything we've built?
+          </p>
+          <button
+            onClick={() => navigate("/all-projects")}
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl border border-[#C9A24D]/40 bg-[#C9A24D]/10 text-[#C9A24D] font-semibold text-base hover:bg-[#C9A24D]/20 hover:border-[#C9A24D]/70 hover:shadow-lg hover:shadow-[#C9A24D]/10 transition-all duration-300"
+          >
+            View All Projects
+            <ArrowRight
+              size={18}
+              className="transform group-hover:translate-x-1.transition-transform duration-300"
+            />
+          </button>
+        </div>
       </div>
 
       {selectedProject && (
@@ -217,9 +231,6 @@ export function Projects() {
           onClose={() => setSelectedProject(null)}
         />
       )}
-
-      
-   
     </section>
   );
 }
