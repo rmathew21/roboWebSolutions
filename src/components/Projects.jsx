@@ -7,6 +7,8 @@ import saveApeImg2 from "../assets/saveApeMockup2.png";
 import freeSwingMockup from "../assets/freeSwingMockup.png";
 import nexGenMockup from "../assets/nexGenMockup.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
+import msacpaMockup from "../assets/msacpaMockup.png";
+//Mockup color in Shot.so use #1E293B
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -68,8 +70,37 @@ export function Projects() {
       liveUrl: "https://www.saveape.org/",
       liveLabel: "Visit Live Site",
     },
+    
     {
       id: 3,
+      title: "Samuel CPA PLLC",
+      category: "Finance",
+      image: msacpaMockup,
+      description:
+        "Complete redesign and rebuild of a CPA firm's outdated website into a modern, professional web presence using React, Vite, Tailwind CSS, and React Router.",
+      fullDescription:
+        "Samuel CPA PLLC is a Stafford, TX-based accounting firm that had been running on an aging website that no longer reflected the quality and professionalism of their services. This project involved a full ground-up rebuild — designing and developing a multi-page site with a clean, trustworthy aesthetic built around a custom forest green palette. The new site includes dedicated pages for Home, About, Services, Resources, and Contact, with features like a tax rate reference table, IRS publications grid, a record retention guide, and an FAQ accordion — giving clients genuinely useful tools alongside the firm's core information.",
+      technologies: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "React Router",
+        "FormSpree",
+      ],
+      // results: [
+      //   "300% increase in online visibility",
+      //   "Virtual consultations fully booked",
+      //   "60% of visitors explore 5+ pages",
+      // ],
+      challenge:
+        "The existing site was years old, visually outdated, and lacked both the modern UX and the informational depth that clients and prospects expect from a professional firm today. The goal was to modernize the brand presence without losing the trust and credibility the firm had built — while also adding real value through resource-rich content pages that go beyond a typical brochure site.",
+      solution:
+        "Built a fully responsive, multi-page React application using Vite for fast development and optimized builds, Tailwind CSS for a polished and consistent design system, and React Router DOM for seamless client-side navigation. The site features a sticky navbar with a mobile hamburger menu, smooth page transitions, and a suite of interactive resource tools. The result is a professional, fast-loading site that positions the firm credibly and gives clients practical tax and accounting resources at their fingertips.",
+      liveUrl: "https://msacpas.vercel.app/",
+      liveLabel: "Visit Live Site",
+    },
+    {
+      id: 4,
       title: "Free Swing",
       category: "Sports",
       image: freeSwingMockup,
@@ -96,7 +127,7 @@ export function Projects() {
       liveLabel: "Visit Live Site",
     },
     {
-      id: 4,
+      id: 5,
       title: "NexGen Professional Solutions",
       category: "Services",
       image: nexGenMockup,
@@ -124,7 +155,7 @@ export function Projects() {
       liveLabel: "Visit Live Site",
     },
     {
-      id: 5,
+      id: 6,
       title: "Sweets N' Treats",
       category: "Food",
       image: sweetTreatMockup,
