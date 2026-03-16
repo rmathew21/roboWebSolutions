@@ -7,13 +7,13 @@ import saveApeImg2 from "../assets/saveApeMockup2.png";
 import freeSwingMockup from "../assets/freeSwingMockup.png";
 import nexGenMockup from "../assets/nexGenMockup.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
+import msacpaMockup from "../assets/msacpaMockup.png";
 
 const ALL_PROJECTS = [
   {
     id: 1,
     title: "Legacy Life Agency",
     category: "Finance",
-    // image: legacyMockUp,
     image: legacyMockUp,
     description:
       "A modern, mobile-responsive website for Legacy Life Agency, showcasing life-insurance and wealth-planning services",
@@ -26,10 +26,15 @@ const ALL_PROJECTS = [
       "React Router",
       "Formspree",
     ],
+    //   results: [
+    //     "150% increase in online reservations",
+    //     "85% mobile user engagement",
+    //     "Reduced phone inquiries by 40%",
+    //   ],
     challenge:
       "Legacy Life Agency was a new financial-services brand without an online presence. They needed a website that would build trust and credibility in the life-insurance market, while explaining complex services like term life, whole life and wealth planning in a simple language.",
     solution:
-      "I designed and developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
+      "I designed a developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
     liveUrl: "https://www.legacylifeagency.net/",
     liveLabel: "Visit Live Site",
   },
@@ -37,41 +42,78 @@ const ALL_PROJECTS = [
     id: 2,
     title: "Save Austin Parkway",
     category: "Edu Advocacy",
-    // image: saveApeImg2,
     image: saveApeImg2,
     description:
-      "A community advocacy website built to help parents and neighbors rally support for Austin Parkway Elementary.",
+      "A community advocacy website built to help parents and neighbors rally support for Austin Parkway Elementary, providing updates, petitions, and tools to contact school board members and protect a local school from closure.",
     fullDescription:
-      "SaveAPE.org is a grassroots community website built to help parents, teachers, and neighbors organize around the potential closure of Austin Parkway Elementary in Fort Bend ISD. The site provides clear information about proposed school closures, upcoming board meetings, and ways community members can take action.",
+      "SaveAPE.org is a grassroots community website built to help parents, teachers, and neighbors organize around the potential closure of Austin Parkway Elementary in Fort Bend ISD. The site provides clear information about proposed school closures, upcoming board meetings, and ways community members can take action, such as signing petitions, emailing trustees, and speaking at public hearings.",
     technologies: [
       "Squarespace",
       "Custom CSS",
       "Google Form Integration",
       "Change.org Petition Embed",
     ],
+    //   results: [
+    //     "200+ weekly online orders",
+    //     "1,000+ loyalty members enrolled",
+    //     "4.9/5 customer satisfaction",
+    //   ],
     challenge:
-      "The SaveAPE community needed a website on extremely short notice after Fort Bend ISD announced a proposed school closure with very little time before the board vote.",
+      "The SaveAPE community needed a website on extremely short notice after Fort Bend ISD announced a proposed school closure with very little time before the board vote. Parents and neighbors needed a central place to get accurate information, sign petitions, submit feedback, and contact trustees. The site had to be built quickly, be easy for volunteers to update, and work perfectly on mobile devices.",
     solution:
-      "I rapidly designed and launched SaveAPE.org using Squarespace to ensure a fast turnaround while still delivering a clean, professional site the community could trust.",
+      "I rapidly designed and launched SaveAPE.org using Squarespace to ensure a fast turnaround while still delivering a clean, professional site the community could trust. The site integrated Google Forms for feedback collection and Change.org petitions to coordinate grassroots advocacy efforts. I structured the layout around clear calls-to-action, mobile-friendly navigation, and easy-to-update content so volunteers could keep the community informed as deadline approached.",
     liveUrl: "https://www.saveape.org/",
     liveLabel: "Visit Live Site",
   },
+  
   {
     id: 3,
+    title: "Samuel CPA PLLC",
+    category: "Finance",
+    image: msacpaMockup,
+    description:
+      "Complete redesign and rebuild of a CPA firm's outdated website into a modern, professional web presence using React, Vite, Tailwind CSS, and React Router.",
+    fullDescription:
+      "Samuel CPA PLLC is a Stafford, TX-based accounting firm that had been running on an aging website that no longer reflected the quality and professionalism of their services. This project involved a full ground-up rebuild — designing and developing a multi-page site with a clean, trustworthy aesthetic built around a custom forest green palette. The new site includes dedicated pages for Home, About, Services, Resources, and Contact, with features like a tax rate reference table, IRS publications grid, a record retention guide, and an FAQ accordion — giving clients genuinely useful tools alongside the firm's core information.",
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "FormSpree",
+    ],
+    // results: [
+    //   "300% increase in online visibility",
+    //   "Virtual consultations fully booked",
+    //   "60% of visitors explore 5+ pages",
+    // ],
+    challenge:
+      "The existing site was years old, visually outdated, and lacked both the modern UX and the informational depth that clients and prospects expect from a professional firm today. The goal was to modernize the brand presence without losing the trust and credibility the firm had built — while also adding real value through resource-rich content pages that go beyond a typical brochure site.",
+    solution:
+      "Built a fully responsive, multi-page React application using Vite for fast development and optimized builds, Tailwind CSS for a polished and consistent design system, and React Router DOM for seamless client-side navigation. The site features a sticky navbar with a mobile hamburger menu, smooth page transitions, and a suite of interactive resource tools. The result is a professional, fast-loading site that positions the firm credibly and gives clients practical tax and accounting resources at their fingertips.",
+    liveUrl: "https://msacpas.vercel.app/",
+    liveLabel: "Visit Live Site",
+  },
+  {
+    id: 4,
     title: "Free Swing",
     category: "Sports",
-    // image: freeSwingMockup,
     image: freeSwingMockup,
     description:
-      "A modern landing page for an indoor golf simulator business, designed to showcase memberships and booking options.",
+      "Free Swing is a modern landing page for an indoor golf simulator business, designed to showcase memberships, booking options, and immersive simulator features while providing a clean, mobile-responsive user experience.",
     fullDescription:
-      "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology.",
+      "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology. The goal was to create a clean, conversion-focused landing page that clearly communicates membership options, pricing tiers, and booking details while establishing a strong, modern brand presence for a new local business preparing to open in Missouri City.",
     technologies: [
       "Webflow",
       "HTML5/CSS3",
       "Image Optimization",
       "SEO Optimization",
     ],
+    // results: [
+    //   "300% increase in online visibility",
+    //   "Virtual consultations fully booked",
+    //   "60% of visitors explore 5+ pages",
+    // ],
     challenge:
       "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
     solution:
@@ -80,38 +122,42 @@ const ALL_PROJECTS = [
     liveLabel: "Visit Live Site",
   },
   {
-    id: 4,
+    id: 5,
     title: "NexGen Professional Solutions",
     category: "Services",
-    // image: nexGenMockup,
     image: nexGenMockup,
     description:
-      "A clean, modern business website for NexGen Professional Solutions, showcasing automation and digital transformation consulting services.",
+      "A clean, modern business website for NexGen Proffessional Solutions, showcasing automation, recruting, staff augmentation, and digital transformation consulting services with a profressional and scalable design.",
     fullDescription:
-      "As a forward-thinking consulting firm focused on helping organizations accelerate their digital journey, NexGen required a site that conveyed trust, expertise, and scalability.",
+      // "NexGen Professional Solutions needed an online presence that clearly communicated their consulting services and built credibility with potential enterprise clients. The website highlights their core offerings--including automation services, recruting and talent acquistion, staff augmentation, and digital transformation consulting--while maintaining a clean, modern layout that works seamlessly across desktop and mobile devices.",
+      "As a forward-thinking consulting firm focused on helping organizations accelerate their digital journey, NexGen required a site that conveyed trust, expertise, and scalability. I designed the website to present services in an easy-to-understand structure, guide visitors toward contact inquiries, and reflect the company's mission to deliver agile, intelligent solutions that drive measurable business outcomes.",
     technologies: [
       "Squarespace",
       "Responsive CSS & Layout Design",
       "SEO Optimization",
       "Brand & UX Design",
     ],
+    // results: [
+    //   "80% of appointments now booked online",
+    //   "50% reduction in support calls",
+    //   "90% appointment show-up rate",
+    // ],
     challenge:
       "NexGen Professional Solutions needed a professional website that clearly explained complex consulting services and built credibility with enterprise clients.",
     solution:
-      "I created a modern, responsive website with clear service sections, strong branding, and optimized contact flows to convert visitors into leads.",
+      "I created a modern, responsive website with clear service sections, strong branding,a nd optimized contact flows to convert visitors into leads.",
     liveUrl: "https://www.nexgenprosol.com/",
     liveLabel: "Visit Live Site",
   },
   {
-    id: 5,
+    id: 6,
     title: "Sweets N' Treats",
     category: "Food",
-    // image: sweetTreatMockup,
     image: sweetTreatMockup,
     description:
-      "A mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo gallery.",
+      "Sweets N' Treats is a mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo galleries while making it easy for customers to inquire and place orders online.",
     fullDescription:
-      "Sweets N' Treats needed a clean, modern website to showcase their baked goods while building credibility for a growing local bakery brand. I designed and developed a mobile-responsive site that highlights their product offerings, photo gallery, and contact options.",
+      "Sweets N' Treats needed a clean, modern website to showcase their baked goods while building credibility for a growing local bakery brand. I designed and developed a mobile-responsive site that highlights their product offerings, photo gallery, and contact options, making it easy for customers to browse and submit inquiries. The website focuses on strong visual storytelling with optimized dessert images, clear navigation, and simple calls to action so customers can quickly explore products and place orders. Built with performance and usability in mind, the site loads quickly on mobile devices and provides a professional online presence that helps the bakery attract new customers and grow their business.",
     technologies: [
       "HTML5",
       "Bootstrap + Custom CSS",
@@ -119,10 +165,15 @@ const ALL_PROJECTS = [
       "Responsive Mobile-First Design",
       "Image Optimization",
     ],
+    // results: [
+    //   "45% increase in new client bookings",
+    //   "Gift card sales up 120%",
+    //   "Perfect accessibility score",
+    // ],
     challenge:
-      "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders.",
+      "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
     solution:
-      "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders.",
+      "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
     liveUrl: "https://www.sweetsntreatsbakery.com/",
     liveLabel: "Visit Live Site",
   },

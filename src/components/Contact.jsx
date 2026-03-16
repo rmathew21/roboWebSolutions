@@ -22,8 +22,8 @@ export function Contact() {
         {
             icon: Phone,
             title: 'Phone',
-            details: '(555) 123-4567',
-            link: 'tel:5551234567',
+            details: '(281) 846-4844',
+            link: 'tel:2818464844',
         },
         {
             icon: MapPin,
