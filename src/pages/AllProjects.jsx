@@ -8,6 +8,7 @@ import freeSwingMockup from "../assets/freeSwingMockup.png";
 import nexGenMockup from "../assets/nexGenMockup.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
 import msacpaMockup from "../assets/msacpaMockup.png";
+import palmIndiaMockup from "../assets/palmIndiaMockup.png";
 
 const ALL_PROJECTS = [
   {
@@ -175,6 +176,34 @@ const ALL_PROJECTS = [
     solution:
       "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
     liveUrl: "https://www.sweetsntreatsbakery.com/",
+    liveLabel: "Visit Live Site",
+  },
+  {
+    id: 7,
+    title: "Palm India Restaurant",
+    category: "Food",
+    image: palmIndiaMockup,
+    description:
+      "Restaurant website rebuild for Palm India, an Indian restaurant in Carrollton, TX. Replaced a broken, non-mobile-friendly site with a clean, responsive layout featuring a photo carousel, menu pages, and optimized imagery.",
+    fullDescription:
+      "Palm India Restaurant is an Indian dining spot in Carrollton, TX serving dine-in, takeaway, and delivery. Their existing website had become a liability — broken images and zero mobile responsiveness were turning away potential customers before they ever walked through the door. I rebuilt the site from the ground up using HTML, Bootstrap, and custom CSS, delivering a polished multi-page experience with a homepage carousel, a featured dishes section, a full menu page, and a contact page with location and social links.",
+    technologies: [
+      "HTML5",
+      "Bootstrap + Custom CSS",
+      "JavaScript",
+      "Responsive Mobile-First Design",
+      "Image Optimization",
+    ],
+    // results: [
+    //   "45% increase in new client bookings",
+    //   "Gift card sales up 120%",
+    //   "Perfect accessibility score",
+    // ],
+    challenge:
+      "The client's former website had deteriorated over time — images were broken throughout the site and the layout had no mobile support, making it effectively unusable on phones. On top of that, many of the restaurant's own food photos were large, unoptimized files that would have hurt load times even after the rebuild.",
+    solution:
+      "I rebuilt the site from scratch using HTML, Bootstrap, and custom CSS, creating a responsive multi-page layout that works cleanly on all screen sizes. I worked with the client to source and organize their food and ambiance photography, then optimized all images for the web to keep load times fast. The result is a professional, mobile-friendly site the client can confidently share with customers, complete with their menu, contact info, social links, and Google/Yelp review integrations.",
+    liveUrl: "https://restaurant-palm-india.vercel.app/",
     liveLabel: "Visit Live Site",
   },
 ];
