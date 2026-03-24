@@ -9,6 +9,7 @@ import nexGenMockup from "../assets/nexGenMockup.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
 import msacpaMockup from "../assets/msacpaMockup.png";
 import palmIndiaMockup from "../assets/palmIndiaMockup.png";
+import idiliEspressoMockup from '../assets/idiliEspressoMockup.png';
 
 const ALL_PROJECTS = [
   {
@@ -152,19 +153,19 @@ const ALL_PROJECTS = [
   },
   {
     id: 6,
-    title: "Sweets N' Treats",
+    title: "Idili & Espresso",
     category: "Food",
-    image: sweetTreatMockup,
+    image: idiliEspressoMockup,
     description:
-      "Sweets N' Treats is a mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo galleries while making it easy for customers to inquire and place orders online.",
+      "A vibrant restaurant website for a Colorado café blending South Indian and espresso culture, featuring a showcase of their fusion menu and integrated online ordering via Squarespace.",
     fullDescription:
-      "Sweets N' Treats needed a clean, modern website to showcase their baked goods while building credibility for a growing local bakery brand. I designed and developed a mobile-responsive site that highlights their product offerings, photo gallery, and contact options, making it easy for customers to browse and submit inquiries. The website focuses on strong visual storytelling with optimized dessert images, clear navigation, and simple calls to action so customers can quickly explore products and place orders. Built with performance and usability in mind, the site loads quickly on mobile devices and provides a professional online presence that helps the bakery attract new customers and grow their business.",
+      "Idili & Espresso is a Colorado-based café that brings together the warmth of South Indian comfort food and specialty espresso drinks in a uniquely inviting dining experience. The goal of this project was to build a modern, visually engaging web presence that reflects the café's personality — colorful, approachable, and rooted in cultural fusion. The site serves as both a digital storefront and a menu showcase, guiding visitors from first impression to online order with minimal friction. Online ordering is powered through Squarespace's ordering system, seamlessly linked from the site. The custom logo and favicons, designed in Canva and refined in Inkscape, give the brand a cohesive identity across all touchpoints.",
     technologies: [
-      "HTML5",
-      "Bootstrap + Custom CSS",
-      "JavaScript",
-      "Responsive Mobile-First Design",
-      "Image Optimization",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "Inkscape+Canva",
     ],
     // results: [
     //   "45% increase in new client bookings",
@@ -172,10 +173,10 @@ const ALL_PROJECTS = [
     //   "Perfect accessibility score",
     // ],
     challenge:
-      "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
+      "The client needed a website that could do a lot at once — communicate a distinct cultural identity, display a diverse fusion menu in an appetizing way, and funnel customers toward online ordering without requiring a full custom e-commerce build. There was also no existing brand identity to work from, meaning the visual design — including logo and favicon — had to be created from scratch to match the café's warm, cross-cultural personality.",
     solution:
-      "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
-    liveUrl: "https://www.sweetsntreatsbakery.com/",
+      "Built with React, Vite, Tailwind CSS, and React Router DOM, the site is fast, fully responsive, and easy to navigate on any device. The menu is presented in a clean, categorized layout that highlights the café's fusion offerings without overwhelming visitors. Online ordering is handled through an embedded Squarespace integration, keeping the experience smooth while avoiding the complexity of a custom backend. The logo and favicons were designed in Canva and finalized in Inkscape, establishing a cohesive brand identity that carries through every page.",
+    liveUrl: "https://idili-espresso.vercel.app/",
     liveLabel: "Visit Live Site",
   },
   {
@@ -204,6 +205,34 @@ const ALL_PROJECTS = [
     solution:
       "I rebuilt the site from scratch using HTML, Bootstrap, and custom CSS, creating a responsive multi-page layout that works cleanly on all screen sizes. I worked with the client to source and organize their food and ambiance photography, then optimized all images for the web to keep load times fast. The result is a professional, mobile-friendly site the client can confidently share with customers, complete with their menu, contact info, social links, and Google/Yelp review integrations.",
     liveUrl: "https://restaurant-palm-india.vercel.app/",
+    liveLabel: "Visit Live Site",
+  },
+  {
+    id: 8,
+    title: "Sweets N' Treats",
+    category: "Food",
+    image: sweetTreatMockup,
+    description:
+      "Sweets N' Treats is a mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo galleries while making it easy for customers to inquire and place orders online.",
+    fullDescription:
+      "Sweets N' Treats needed a clean, modern website to showcase their baked goods while building credibility for a growing local bakery brand. I designed and developed a mobile-responsive site that highlights their product offerings, photo gallery, and contact options, making it easy for customers to browse and submit inquiries. The website focuses on strong visual storytelling with optimized dessert images, clear navigation, and simple calls to action so customers can quickly explore products and place orders. Built with performance and usability in mind, the site loads quickly on mobile devices and provides a professional online presence that helps the bakery attract new customers and grow their business.",
+    technologies: [
+      "HTML5",
+      "Bootstrap + Custom CSS",
+      "JavaScript",
+      "Responsive Mobile-First Design",
+      "Image Optimization",
+    ],
+    // results: [
+    //   "45% increase in new client bookings",
+    //   "Gift card sales up 120%",
+    //   "Perfect accessibility score",
+    // ],
+    challenge:
+      "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
+    solution:
+      "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
+    liveUrl: "https://www.sweetsntreatsbakery.com/",
     liveLabel: "Visit Live Site",
   },
 ];
