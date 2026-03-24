@@ -176,7 +176,7 @@ const ALL_PROJECTS = [
       "The client needed a website that could do a lot at once — communicate a distinct cultural identity, display a diverse fusion menu in an appetizing way, and funnel customers toward online ordering without requiring a full custom e-commerce build. There was also no existing brand identity to work from, meaning the visual design — including logo and favicon — had to be created from scratch to match the café's warm, cross-cultural personality.",
     solution:
       "Built with React, Vite, Tailwind CSS, and React Router DOM, the site is fast, fully responsive, and easy to navigate on any device. The menu is presented in a clean, categorized layout that highlights the café's fusion offerings without overwhelming visitors. Online ordering is handled through an embedded Squarespace integration, keeping the experience smooth while avoiding the complexity of a custom backend. The logo and favicons were designed in Canva and finalized in Inkscape, establishing a cohesive brand identity that carries through every page.",
-    liveUrl: "https://idili-espresso.vercel.app/",
+    liveUrl: "https://idiliespresso.com/",
     liveLabel: "Visit Live Site",
   },
   {
