@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Nav from './Nav';
 import Footer from './Footer';
 import ScrollToHash from "./ScrollToHash";
@@ -13,6 +14,7 @@ export default function Layout() {
             <Nav />
             <Outlet />
             <Footer />
+            <Analytics />
         </>
     );
 }
