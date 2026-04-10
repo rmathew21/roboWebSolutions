@@ -39,6 +39,7 @@ const ALL_PROJECTS = [
       "I designed a developed a modern, responsive website using React, Vite, Tailwind CSS, and React Router with a focus on clarity, branding, and lead generation. Key solutions included clear service messaging, mobile first development, and a streamlined contact and appointment request form to encourage consultation requests.",
     liveUrl: "https://www.legacylifeagency.net/",
     liveLabel: "Visit Live Site",
+    githubUrl: "https://github.com/rmathew21/legacy-life-agency",
   },
   {
     id: 2,
@@ -95,6 +96,7 @@ const ALL_PROJECTS = [
       "Built a fully responsive, multi-page React application using Vite for fast development and optimized builds, Tailwind CSS for a polished and consistent design system, and React Router DOM for seamless client-side navigation. The site features a sticky navbar with a mobile hamburger menu, smooth page transitions, and a suite of interactive resource tools. The result is a professional, fast-loading site that positions the firm credibly and gives clients practical tax and accounting resources at their fingertips.",
     liveUrl: "https://msacpas.vercel.app/",
     liveLabel: "Visit Live Site",
+    githubUrl: "https://github.com/rmathew21/msacpas",
   },
   {
     id: 4,
@@ -178,6 +180,7 @@ const ALL_PROJECTS = [
       "Built with React, Vite, Tailwind CSS, and React Router DOM, the site is fast, fully responsive, and easy to navigate on any device. The menu is presented in a clean, categorized layout that highlights the café's fusion offerings without overwhelming visitors. Online ordering is handled through an embedded Squarespace integration, keeping the experience smooth while avoiding the complexity of a custom backend. The logo and favicons were designed in Canva and finalized in Inkscape, establishing a cohesive brand identity that carries through every page.",
     liveUrl: "https://idiliespresso.com/",
     liveLabel: "Visit Live Site",
+    githubUrl: "https://github.com/rmathew21/idili-espresso",
   },
   {
     id: 7,
@@ -206,6 +209,7 @@ const ALL_PROJECTS = [
       "I rebuilt the site from scratch using HTML, Bootstrap, and custom CSS, creating a responsive multi-page layout that works cleanly on all screen sizes. I worked with the client to source and organize their food and ambiance photography, then optimized all images for the web to keep load times fast. The result is a professional, mobile-friendly site the client can confidently share with customers, complete with their menu, contact info, social links, and Google/Yelp review integrations.",
     liveUrl: "https://restaurant-palm-india.vercel.app/",
     liveLabel: "Visit Live Site",
+    githubUrl: "https://github.com/rmathew21/restaurantPalmIndia",
   },
   {
     id: 8,
@@ -234,6 +238,7 @@ const ALL_PROJECTS = [
       "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
     liveUrl: "https://www.sweetsntreatsbakery.com/",
     liveLabel: "Visit Live Site",
+    githubUrl: "https://github.com/rmathew21/sweetsAndTreats",
   },
 ];
 

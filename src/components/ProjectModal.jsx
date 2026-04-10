@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { X, ExternalLink } from "lucide-react";
+import { X, ExternalLink, Github } from "lucide-react";
 
 export function ProjectModal({ project, onClose }) {
   useEffect(() => {
@@ -86,26 +86,42 @@ export function ProjectModal({ project, onClose }) {
             </div>
           </div>
 
-          {project.liveUrl && (
+          {(project.liveUrl || project.githubUrl) && (
             <div className="mt-10 pt-8 border-t border-[#E5E7EB] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div>
                 <h4 className="text-lg font-bold text-[#1E293B]">
                   Want to see it in action?
                 </h4>
                 <p className="text-[#64748B]">
-                  Open the deployed site in a new tab.
+                  Check out the live site or browse the source code.
                 </p>
               </div>
 
-              <a 
-                href={project.liveUrl} 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#F59E0B] text-white font-semibold hover:bg-[#d97706] transition-colors"
-              >
-                {project.liveLabel || "Visit Live Site"}
-                <ExternalLink size={18} className="ml-2" />
-              </a>
+              <div className="flex flex-col sm:flex-row gap-3">
+                {project.githubUrl && (
+                  <a 
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#1E293B] text-white font-semibold hover:bg-[#0f172a] transition-colors"
+                    >
+                      GitHub Repo
+                      <Github size={18} className="ml-2" />
+                  </a>
+                )}
+
+                {project.liveUrl && (
+                  <a 
+                  href={project.liveUrl} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#F59E0B] text-white font-semibold hover:bg-[#d97706] transition-colors"
+                >
+                  {project.liveLabel || "Visit Live Site"}
+                  <ExternalLink size={18} className="ml-2" />
+                </a>
+                )}
+              </div>
             </div>
           )}
 
