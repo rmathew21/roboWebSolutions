@@ -6,8 +6,10 @@ import legacyMockUp from "../assets/legacyLifeMockup.png";
 import saveApeImg2 from "../assets/saveApeMockup2.png";
 import freeSwingMockup from "../assets/freeSwingMockup.png";
 import nexGenMockup from "../assets/nexGenMockup.png";
+import nexGenMockup2 from "../assets/nexGenMockup2.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
 import msacpaMockup from "../assets/msacpaMockup.png";
+import msacpaMockup2 from "../assets/msacpaMockup2.png";
 import idiliEspressoMockup from "../assets/idiliEspressoMockup.png"
 //Mockup color in Shot.so use #1E293B
 
@@ -18,6 +20,35 @@ export function Projects() {
   const projects = [
     {
       id: 1,
+      title: "NexGen Professional Solutions",
+      category: "Services",
+      image: nexGenMockup2,
+      description:
+        "Squarespace-to-Next.js migration for NexGen Professional Solutions, a business consulting firm based in Austin, TX. Built with a bold chess-themed identity featuring a jet black, ivory, and gold palette.",
+      fullDescription:
+        "NexGen Professional Solutions came to Robo Web Solutions with an existing Squarespace site that no longer reflected the premium, strategic brand they were building. The goal was a complete platform migration — moving from Squarespace's template constraints into a fully custom Next.js application with a distinctive visual identity. The result is a multi-page consulting site with a chess-inspired design language (complete with chess piece iconography, Cormorant Garamond headings, and a jet black/ivory/gold color scheme) that positions NexGen as a high-caliber, forward-thinking firm. The new site includes a homepage with hero, services overview, and stats sections; dedicated About, Services, and Contact pages; a responsive navbar with mobile menu; and a branded footer — all deployed on Vercel with domain migration pending.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vercel",
+        "SVG custom logo",
+      ],
+      //   results: [
+      //     "150% increase in online reservations",
+      //     "85% mobile user engagement",
+      //     "Reduced phone inquiries by 40%",
+      //   ],
+      challenge:
+        "The original Squarespace site was functional but generic — limited by template constraints in both design and performance. The client needed a site that matched their elevated brand positioning in the consulting space, with full control over layout, typography, and visual identity. Squarespace offered no path to the custom chess-themed aesthetic the client envisioned, and its CMS lock-in made future scalability a concern.",
+      solution:
+        "Rebuilt the site from the ground up in Next.js 14 using the App Router, with Tailwind CSS v4 handling all styling. Developed a cohesive chess-themed design system — jet black backgrounds, ivory text, gold accents, and Cormorant Garamond headings — to give the brand a distinctive, premium feel that Squarespace simply couldn't accommodate. Each page was built as a standalone route with shared layout components (Navbar, Footer), and the entire site was deployed to Vercel for fast, reliable hosting. Domain cutover from nexgenprosol.com is staged for a future migration window with zero-downtime DNS transition in mind.",
+      liveUrl: "https://nex-gen-ashen.vercel.app/",
+      liveLabel: "Visit Live Site",
+      githubUrl: "https://github.com/rmathew21/nex-gen",
+    },
+    {
+      id: 2,
       title: "Legacy Life Agency",
       category: "Finance",
       image: legacyMockUp,
@@ -46,7 +77,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/legacy-life-agency",
     },
     {
-      id: 2,
+      id: 3,
       title: "Save Austin Parkway",
       category: "Edu Advocacy",
       image: saveApeImg2,
@@ -74,10 +105,10 @@ export function Projects() {
     },
     
     {
-      id: 3,
+      id: 4,
       title: "Samuel CPA PLLC",
       category: "Finance",
-      image: msacpaMockup,
+      image: msacpaMockup2,
       description:
         "Complete redesign and rebuild of a CPA firm's outdated website into a modern, professional web presence using React, Vite, Tailwind CSS, and React Router.",
       fullDescription:
@@ -103,7 +134,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/msacpas",
     },
     {
-      id: 4,
+      id: 5,
       title: "Free Swing",
       category: "Sports",
       image: freeSwingMockup,
@@ -127,34 +158,6 @@ export function Projects() {
       solution:
         "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
       liveUrl: "https://freeswing.app/",
-      liveLabel: "Visit Live Site",
-    },
-    {
-      id: 5,
-      title: "NexGen Professional Solutions",
-      category: "Services",
-      image: nexGenMockup,
-      description:
-        "A clean, modern business website for NexGen Proffessional Solutions, showcasing automation, recruting, staff augmentation, and digital transformation consulting services with a profressional and scalable design.",
-      fullDescription:
-        // "NexGen Professional Solutions needed an online presence that clearly communicated their consulting services and built credibility with potential enterprise clients. The website highlights their core offerings--including automation services, recruting and talent acquistion, staff augmentation, and digital transformation consulting--while maintaining a clean, modern layout that works seamlessly across desktop and mobile devices.",
-        "As a forward-thinking consulting firm focused on helping organizations accelerate their digital journey, NexGen required a site that conveyed trust, expertise, and scalability. I designed the website to present services in an easy-to-understand structure, guide visitors toward contact inquiries, and reflect the company's mission to deliver agile, intelligent solutions that drive measurable business outcomes.",
-      technologies: [
-        "Squarespace",
-        "Responsive CSS & Layout Design",
-        "SEO Optimization",
-        "Brand & UX Design",
-      ],
-      // results: [
-      //   "80% of appointments now booked online",
-      //   "50% reduction in support calls",
-      //   "90% appointment show-up rate",
-      // ],
-      challenge:
-        "NexGen Professional Solutions needed a professional website that clearly explained complex consulting services and built credibility with enterprise clients.",
-      solution:
-        "I created a modern, responsive website with clear service sections, strong branding,a nd optimized contact flows to convert visitors into leads.",
-      liveUrl: "https://www.nexgenprosol.com/",
       liveLabel: "Visit Live Site",
     },
     {
