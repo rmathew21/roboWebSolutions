@@ -129,7 +129,7 @@ export function Projects() {
         "The existing site was years old, visually outdated, and lacked both the modern UX and the informational depth that clients and prospects expect from a professional firm today. The goal was to modernize the brand presence without losing the trust and credibility the firm had built — while also adding real value through resource-rich content pages that go beyond a typical brochure site.",
       solution:
         "Built a fully responsive, multi-page React application using Vite for fast development and optimized builds, Tailwind CSS for a polished and consistent design system, and React Router DOM for seamless client-side navigation. The site features a sticky navbar with a mobile hamburger menu, smooth page transitions, and a suite of interactive resource tools. The result is a professional, fast-loading site that positions the firm credibly and gives clients practical tax and accounting resources at their fingertips.",
-      liveUrl: "https://msacpas.vercel.app/",
+      liveUrl: "https://msacpas.com/",
       liveLabel: "Visit Live Site",
       githubUrl: "https://github.com/rmathew21/msacpas",
     },
