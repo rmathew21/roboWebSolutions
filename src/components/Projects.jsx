@@ -10,8 +10,8 @@ import nexGenMockup2 from "../assets/nexGenMockup2.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
 import msacpaMockup from "../assets/msacpaMockup.png";
 import msacpaMockup2 from "../assets/msacpaMockup2.png";
-import idiliEspressoMockup from "../assets/idiliEspressoMockup.png"
-import cleanHomeProsMockup from '../assets/cleanHomeProsMockup.png';
+import idiliEspressoMockup from "../assets/idiliEspressoMockup.png";
+import cleanHomeProsMockup from "../assets/cleanHomeProsMockup.png";
 //Mockup color in Shot.so use #1E293B
 
 export function Projects() {
@@ -28,13 +28,7 @@ export function Projects() {
         "A fast, modern marketing site for a Houston-area residential cleaning company — rebuilt from the ground up and relaunched after their previous site went down.",
       fullDescription:
         "Clean Home Pros LLC is a residential cleaning business serving the greater Houston area. The owner had an existing website that stopped functioning and had to be taken offline, leaving the business without a web presence. I designed and built a brand-new four-page marketing site from scratch using Next.js, Tailwind CSS, and TypeScript, deployed on Vercel. The site pairs a clean, trustworthy visual identity with the essentials a local service business needs to convert visitors: clear service offerings, a strong above-the-fold value proposition, and a friction-free way to request a quote. A multi-step contact wizard walks prospective customers through their cleaning needs one question at a time, making it easier to submit a complete, useful inquiry than a single long form would. The result is a quick, responsive, mobile-first site that gets the business back in front of local customers and ready to book work.",
-      technologies: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Vercel",
-        "Formspree",
-      ],
+      technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "Formspree"],
       //   results: [
       //     "150% increase in online reservations",
       //     "85% mobile user engagement",
@@ -133,7 +127,7 @@ export function Projects() {
       liveUrl: "https://www.saveape.org/",
       liveLabel: "Visit Live Site",
     },
-    
+
     {
       id: 5,
       title: "Samuel CPA PLLC",
@@ -164,7 +158,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/msacpas",
     },
     {
-      id: 5,
+      id: 6,
       title: "Idili & Espresso",
       category: "Food",
       image: idiliEspressoMockup,
@@ -192,62 +186,6 @@ export function Projects() {
       liveLabel: "Visit Live Site",
       githubUrl: "https://github.com/rmathew21/idili-espresso",
     },
-    {
-      id: 6,
-      title: "Free Swing",
-      category: "Sports",
-      image: freeSwingMockup,
-      description:
-        "Free Swing is a modern landing page for an indoor golf simulator business, designed to showcase memberships, booking options, and immersive simulator features while providing a clean, mobile-responsive user experience.",
-      fullDescription:
-        "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology. The goal was to create a clean, conversion-focused landing page that clearly communicates membership options, pricing tiers, and booking details while establishing a strong, modern brand presence for a new local business preparing to open in Missouri City.",
-      technologies: [
-        "Webflow",
-        "HTML5/CSS3",
-        "Image Optimization",
-        "SEO Optimization",
-      ],
-      // results: [
-      //   "300% increase in online visibility",
-      //   "Virtual consultations fully booked",
-      //   "60% of visitors explore 5+ pages",
-      // ],
-      challenge:
-        "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
-      solution:
-        "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
-      liveUrl: "https://freeswing.app/",
-      liveLabel: "Visit Live Site",
-    },
-    
-    // {
-    //   id: 6,
-    //   title: "Sweets N' Treats",
-    //   category: "Food",
-    //   image: sweetTreatMockup,
-    //   description:
-    //     "Sweets N' Treats is a mobile-responsive website built for a local bakery to showcase custom cakes, cupcakes, cookies and a photo galleries while making it easy for customers to inquire and place orders online.",
-    //   fullDescription:
-    //     "Sweets N' Treats needed a clean, modern website to showcase their baked goods while building credibility for a growing local bakery brand. I designed and developed a mobile-responsive site that highlights their product offerings, photo gallery, and contact options, making it easy for customers to browse and submit inquiries. The website focuses on strong visual storytelling with optimized dessert images, clear navigation, and simple calls to action so customers can quickly explore products and place orders. Built with performance and usability in mind, the site loads quickly on mobile devices and provides a professional online presence that helps the bakery attract new customers and grow their business.",
-    //   technologies: [
-    //     "HTML5",
-    //     "Bootstrap + Custom CSS",
-    //     "JavaScript",
-    //     "Responsive Mobile-First Design",
-    //     "Image Optimization",
-    //   ],
-      // results: [
-      //   "45% increase in new client bookings",
-      //   "Gift card sales up 120%",
-      //   "Perfect accessibility score",
-      // ],
-    //   challenge:
-    //     "The bakery relied mainly on social media and word-of-mouth, making it difficult for customers to view their full menu, see photos of custom cakes, or easily contact them for orders. They needed a fast, affordable website that looked professional and worked well on mobile devices.",
-    //   solution:
-    //     "I created a visually appealing, mobile-responsive website that showcases their products, organizes galleries, and provides clear contact options for orders. The new site gives the bakery a professional online presence, improves customer trust, and makes it easier for customers to discover their desserts and place inquiries.",
-    //   liveUrl: "https://www.sweetsntreatsbakery.com/",
-    //   liveLabel: "Visit Live Site",
-    // },
   ];
 
   return (
