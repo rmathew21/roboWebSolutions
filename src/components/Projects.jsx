@@ -11,6 +11,7 @@ import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
 import msacpaMockup from "../assets/msacpaMockup.png";
 import msacpaMockup2 from "../assets/msacpaMockup2.png";
 import idiliEspressoMockup from "../assets/idiliEspressoMockup.png"
+import cleanHomeProsMockup from '../assets/cleanHomeProsMockup.png';
 //Mockup color in Shot.so use #1E293B
 
 export function Projects() {
@@ -20,6 +21,35 @@ export function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Clean Home Pros",
+      category: "Services",
+      image: cleanHomeProsMockup,
+      description:
+        "A fast, modern marketing site for a Houston-area residential cleaning company — rebuilt from the ground up and relaunched after their previous site went down.",
+      fullDescription:
+        "Clean Home Pros LLC is a residential cleaning business serving the greater Houston area. The owner had an existing website that stopped functioning and had to be taken offline, leaving the business without a web presence. I designed and built a brand-new four-page marketing site from scratch using Next.js, Tailwind CSS, and TypeScript, deployed on Vercel. The site pairs a clean, trustworthy visual identity with the essentials a local service business needs to convert visitors: clear service offerings, a strong above-the-fold value proposition, and a friction-free way to request a quote. A multi-step contact wizard walks prospective customers through their cleaning needs one question at a time, making it easier to submit a complete, useful inquiry than a single long form would. The result is a quick, responsive, mobile-first site that gets the business back in front of local customers and ready to book work.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vercel",
+        "Formspree",
+      ],
+      //   results: [
+      //     "150% increase in online reservations",
+      //     "85% mobile user engagement",
+      //     "Reduced phone inquiries by 40%",
+      //   ],
+      challenge:
+        "The client had already lost their web presence — the old site was broken and pulled down, so there was no functioning reference to restore or migrate from. I needed to rebuild the business's entire online front door from a blank slate: establishing a coherent brand look, structuring the content so a homeowner could understand the services and request a quote in seconds, and doing it on a foundation that wouldn't break down the way the previous site had. On top of that, the lead-capture experience had to feel approachable rather than like filling out paperwork, since a clunky contact form is exactly where local service businesses lose customers.",
+      solution:
+        "I built the site on Next.js with Tailwind CSS and TypeScript, giving it a fast, maintainable, type-safe foundation and deploying it on Vercel for reliable hosting and instant updates. I produced and processed the brand assets, designed a clean four-page layout optimized for mobile, and implemented a guided multi-step contact wizard that breaks the quote request into simple, low-pressure steps. The outcome is a modern, responsive site that loads quickly, reflects the business's professionalism, and turns visitors into leads — relaunching Clean Home Pros online with a presence built to last.",
+      liveUrl: "https://clean-home-pros.vercel.app/",
+      liveLabel: "Visit Live Site",
+      githubUrl: "https://github.com/rmathew21/clean-home-pros",
+    },
+    {
+      id: 2,
       title: "NexGen Professional Solutions",
       category: "Services",
       image: nexGenMockup2,
@@ -48,7 +78,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/nex-gen",
     },
     {
-      id: 2,
+      id: 3,
       title: "Legacy Life Agency",
       category: "Finance",
       image: legacyMockUp,
@@ -77,7 +107,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/legacy-life-agency",
     },
     {
-      id: 3,
+      id: 4,
       title: "Save Austin Parkway",
       category: "Edu Advocacy",
       image: saveApeImg2,
@@ -105,7 +135,7 @@ export function Projects() {
     },
     
     {
-      id: 4,
+      id: 5,
       title: "Samuel CPA PLLC",
       category: "Finance",
       image: msacpaMockup2,
@@ -135,33 +165,6 @@ export function Projects() {
     },
     {
       id: 5,
-      title: "Free Swing",
-      category: "Sports",
-      image: freeSwingMockup,
-      description:
-        "Free Swing is a modern landing page for an indoor golf simulator business, designed to showcase memberships, booking options, and immersive simulator features while providing a clean, mobile-responsive user experience.",
-      fullDescription:
-        "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology. The goal was to create a clean, conversion-focused landing page that clearly communicates membership options, pricing tiers, and booking details while establishing a strong, modern brand presence for a new local business preparing to open in Missouri City.",
-      technologies: [
-        "Webflow",
-        "HTML5/CSS3",
-        "Image Optimization",
-        "SEO Optimization",
-      ],
-      // results: [
-      //   "300% increase in online visibility",
-      //   "Virtual consultations fully booked",
-      //   "60% of visitors explore 5+ pages",
-      // ],
-      challenge:
-        "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
-      solution:
-        "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
-      liveUrl: "https://freeswing.app/",
-      liveLabel: "Visit Live Site",
-    },
-    {
-      id: 6,
       title: "Idili & Espresso",
       category: "Food",
       image: idiliEspressoMockup,
@@ -189,6 +192,34 @@ export function Projects() {
       liveLabel: "Visit Live Site",
       githubUrl: "https://github.com/rmathew21/idili-espresso",
     },
+    {
+      id: 6,
+      title: "Free Swing",
+      category: "Sports",
+      image: freeSwingMockup,
+      description:
+        "Free Swing is a modern landing page for an indoor golf simulator business, designed to showcase memberships, booking options, and immersive simulator features while providing a clean, mobile-responsive user experience.",
+      fullDescription:
+        "Free Swing is a promotional website built for an indoor golf simulator startup offering immersive simulator bays where golfers can practice, compete with friends, and improve their swing using advanced tracking technology. The goal was to create a clean, conversion-focused landing page that clearly communicates membership options, pricing tiers, and booking details while establishing a strong, modern brand presence for a new local business preparing to open in Missouri City.",
+      technologies: [
+        "Webflow",
+        "HTML5/CSS3",
+        "Image Optimization",
+        "SEO Optimization",
+      ],
+      // results: [
+      //   "300% increase in online visibility",
+      //   "Virtual consultations fully booked",
+      //   "60% of visitors explore 5+ pages",
+      // ],
+      challenge:
+        "Free Swing was a new business without an online presence, needing a professional website to explain simulator technology, pricing, and booking options before launch.",
+      solution:
+        "Built a fast, mobile-responsive landing page with clear membership tiers, strong CTAs, and modern branding to help attract early customers and establish credibility.",
+      liveUrl: "https://freeswing.app/",
+      liveLabel: "Visit Live Site",
+    },
+    
     // {
     //   id: 6,
     //   title: "Sweets N' Treats",
