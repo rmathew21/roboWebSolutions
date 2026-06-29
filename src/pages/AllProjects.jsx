@@ -40,7 +40,7 @@ const ALL_PROJECTS = [
       "The client had already lost their web presence — the old site was broken and pulled down, so there was no functioning reference to restore or migrate from. I needed to rebuild the business's entire online front door from a blank slate: establishing a coherent brand look, structuring the content so a homeowner could understand the services and request a quote in seconds, and doing it on a foundation that wouldn't break down the way the previous site had. On top of that, the lead-capture experience had to feel approachable rather than like filling out paperwork, since a clunky contact form is exactly where local service businesses lose customers.",
     solution:
       "I built the site on Next.js with Tailwind CSS and TypeScript, giving it a fast, maintainable, type-safe foundation and deploying it on Vercel for reliable hosting and instant updates. I produced and processed the brand assets, designed a clean four-page layout optimized for mobile, and implemented a guided multi-step contact wizard that breaks the quote request into simple, low-pressure steps. The outcome is a modern, responsive site that loads quickly, reflects the business's professionalism, and turns visitors into leads — relaunching Clean Home Pros online with a presence built to last.",
-    liveUrl: "https://clean-home-pros.vercel.app/",
+    liveUrl: "https://www.cleanhomeprosllc.com/",
     liveLabel: "Visit Live Site",
     githubUrl: "https://github.com/rmathew21/clean-home-pros",
   },
