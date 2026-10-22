@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import { ProjectModal } from "./ProjectModal";
 import legacyMockUp from "../assets/legacyLifeMockup.png";
 import saveApeImg2 from "../assets/saveApeMockup2.png";
-import freeSwingMockup from "../assets/freeSwingMockup.png";
-import nexGenMockup from "../assets/nexGenMockup.png";
+// import freeSwingMockup from "../assets/freeSwingMockup.png";
+// import nexGenMockup from "../assets/nexGenMockup.png";
 import nexGenMockup2 from "../assets/nexGenMockup2.png";
-import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
-import msacpaMockup from "../assets/msacpaMockup.png";
+// import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
+// import msacpaMockup from "../assets/msacpaMockup.png";
 import msacpaMockup2 from "../assets/msacpaMockup2.png";
-import idiliEspressoMockup from "../assets/idiliEspressoMockup.png";
+// import idiliEspressoMockup from "../assets/idiliEspressoMockup.png";
 import cleanHomeProsMockup from "../assets/cleanHomeProsMockup.png";
 import shoppingListMockup from "../assets/shoppingListMockup.png";
 
