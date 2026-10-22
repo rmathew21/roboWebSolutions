@@ -8,15 +8,39 @@ import freeSwingMockup from "../assets/freeSwingMockup.png";
 import nexGenMockup from "../assets/nexGenMockup.png";
 import nexGenMockup2 from "../assets/nexGenMockup2.png";
 import sweetTreatMockup from "../assets/sweetNTreatsMockup.png";
-import msacpaMockup from "../assets/msacpaMockup.png";
+// import msacpaMockup from "../assets/msacpaMockup.png";
 import msacpaMockup2 from "../assets/msacpaMockup2.png";
 import palmIndiaMockup from "../assets/palmIndiaMockup.png";
 import idiliEspressoMockup from '../assets/idiliEspressoMockup.png';
 import cleanHomeProsMockup from '../assets/cleanHomeProsMockup.png';
+import shoppingListMockup from '../assets/shoppingListMockup.png';
 
 const ALL_PROJECTS = [
   {
-    id: 1,
+        id: 1,
+        title: "Shopping List",
+        category: "Productivity",
+        image: shoppingListMockup,
+        description:
+            "A shared shopping list web app that syncs across devices, so everyone in a household sees what's been added and what's already in the cart.",
+        fullDescription:
+            "Shopping List is a mobile-first web app for households that shop together. Anyone can start adding items right away without creating an account, then save the list with a list name and 4-digit PIN to open it on any phone or computer. Checked-off items move to an \"In the cart\" section with a live timestamp showing how long ago they were picked up, and changes made on one device appear on the others within seconds.",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Neon Postgres", "Drizzle ORM", "ServerActions", "Vercel"],
+        //   results: [
+        //     "150% increase in online reservations",
+        //     "85% mobile user engagement",
+        //     "Reduced phone inquiries by 40%",
+        //   ],
+        challenge:
+            "Most shared list apps require everyone to download an app and create an account before they can add a single item. I wanted something a household could start using immediately in the browser, that stayed in sync between phones in the store, and that was simple to log in to with a short PIN, while still keeping each household's list private and protected from guessing.",
+        solution:
+            "I built the app with Next.js, TypeScript, and Tailwind CSS, using Neon Postgres with Drizzle ORM and Server Actions for all data changes. Lists start on the device and are saved to the database when the user creates a list name and PIN, with per-list lockouts after repeated wrong PINs. Optimistic updates make every tap feel instant, lightweight polling keeps devices in sync, and touches like swipe-to-check-off, swipe-to-delete with undo, a check-off animation, and automatic item icons make it quick to use one-handed in the aisle.", 
+        liveUrl: "https://shopping-list-kad5.vercel.app/",
+        liveLabel: "Visit Live Site",
+        githubUrl: "https://github.com/rmathew21/shopping-list",
+      },
+  {
+    id: 2,
     title: "Clean Home Pros",
     category: "Services",
     image: cleanHomeProsMockup,
@@ -45,7 +69,7 @@ const ALL_PROJECTS = [
     githubUrl: "https://github.com/rmathew21/clean-home-pros",
   },
   {
-    id: 2,
+    id: 3,
     title: "NexGen Professional Solutions",
     category: "Services",
     image: nexGenMockup2,
@@ -74,7 +98,7 @@ const ALL_PROJECTS = [
     githubUrl: "https://github.com/rmathew21/nex-gen",
   },
   {
-    id: 3,
+    id: 4,
     title: "Legacy Life Agency",
     category: "Finance",
     image: legacyMockUp,
@@ -103,7 +127,7 @@ const ALL_PROJECTS = [
     githubUrl: "https://github.com/rmathew21/legacy-life-agency",
   },
   {
-    id: 4,
+    id: 5,
     title: "Save Austin Parkway",
     category: "Edu Advocacy",
     image: saveApeImg2,
@@ -131,7 +155,7 @@ const ALL_PROJECTS = [
   },
   
   {
-    id: 5,
+    id: 6,
     title: "Samuel CPA PLLC",
     category: "Finance",
     image: msacpaMockup2,
@@ -160,7 +184,7 @@ const ALL_PROJECTS = [
     githubUrl: "https://github.com/rmathew21/msacpas",
   },
   {
-    id: 6,
+    id: 7,
     title: "Free Swing",
     category: "Sports",
     image: freeSwingMockup,
@@ -187,7 +211,7 @@ const ALL_PROJECTS = [
     liveLabel: "Visit Live Site",
   },
   {
-    id: 7,
+    id: 8,
     title: "Idili & Espresso",
     category: "Food",
     image: idiliEspressoMockup,
@@ -216,7 +240,7 @@ const ALL_PROJECTS = [
     githubUrl: "https://github.com/rmathew21/idili-espresso",
   },
   {
-    id: 8,
+    id: 9,
     title: "NexGen Professional Solutions",
     category: "Services",
     image: nexGenMockup,
@@ -244,7 +268,7 @@ const ALL_PROJECTS = [
     liveLabel: "Visit Live Site",
   },
   {
-    id: 9,
+    id: 10,
     title: "Palm India Restaurant",
     category: "Food",
     image: palmIndiaMockup,
@@ -273,7 +297,7 @@ const ALL_PROJECTS = [
     githubUrl: "https://github.com/rmathew21/restaurantPalmIndia",
   },
   {
-    id: 10,
+    id: 11,
     title: "Sweets N' Treats",
     category: "Food",
     image: sweetTreatMockup,
