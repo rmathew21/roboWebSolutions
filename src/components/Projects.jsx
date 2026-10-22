@@ -12,6 +12,8 @@ import msacpaMockup from "../assets/msacpaMockup.png";
 import msacpaMockup2 from "../assets/msacpaMockup2.png";
 import idiliEspressoMockup from "../assets/idiliEspressoMockup.png";
 import cleanHomeProsMockup from "../assets/cleanHomeProsMockup.png";
+import shoppingListMockup from "../assets/shoppingListMockup.png";
+
 //Mockup color in Shot.so use #1E293B
 
 export function Projects() {
@@ -21,6 +23,29 @@ export function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Shopping List",
+      category: "Productivity",
+      image: shoppingListMockup,
+      description:
+          "A shared shopping list web app that syncs across devices, so everyone in a household sees what's been added and what's already in the cart.",
+      fullDescription:
+          "Shopping List is a mobile-first web app for households that shop together. Anyone can start adding items right away without creating an account, then save the list with a list name and 4-digit PIN to open it on any phone or computer. Checked-off items move to an \"In the cart\" section with a live timestamp showing how long ago they were picked up, and changes made on one device appear on the others within seconds.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Neon Postgres", "Drizzle ORM", "ServerActions", "Vercel"],
+      //   results: [
+      //     "150% increase in online reservations",
+      //     "85% mobile user engagement",
+      //     "Reduced phone inquiries by 40%",
+      //   ],
+      challenge:
+          "Most shared list apps require everyone to download an app and create an account before they can add a single item. I wanted something a household could start using immediately in the browser, that stayed in sync between phones in the store, and that was simple to log in to with a short PIN, while still keeping each household's list private and protected from guessing.",
+      solution:
+          "I built the app with Next.js, TypeScript, and Tailwind CSS, using Neon Postgres with Drizzle ORM and Server Actions for all data changes. Lists start on the device and are saved to the database when the user creates a list name and PIN, with per-list lockouts after repeated wrong PINs. Optimistic updates make every tap feel instant, lightweight polling keeps devices in sync, and touches like swipe-to-check-off, swipe-to-delete with undo, a check-off animation, and automatic item icons make it quick to use one-handed in the aisle.", 
+      liveUrl: "https://shopping-list-kad5.vercel.app/",
+      liveLabel: "Visit Live Site",
+      githubUrl: "https://github.com/rmathew21/shopping-list",
+    },
+    {
+      id: 2,
       title: "Clean Home Pros",
       category: "Services",
       image: cleanHomeProsMockup,
@@ -43,7 +68,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/clean-home-pros",
     },
     {
-      id: 2,
+      id: 3,
       title: "NexGen Professional Solutions",
       category: "Services",
       image: nexGenMockup2,
@@ -72,7 +97,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/nex-gen",
     },
     {
-      id: 3,
+      id: 4,
       title: "Legacy Life Agency",
       category: "Finance",
       image: legacyMockUp,
@@ -101,7 +126,7 @@ export function Projects() {
       githubUrl: "https://github.com/rmathew21/legacy-life-agency",
     },
     {
-      id: 4,
+      id: 5,
       title: "Save Austin Parkway",
       category: "Edu Advocacy",
       image: saveApeImg2,
@@ -129,7 +154,7 @@ export function Projects() {
     },
 
     {
-      id: 5,
+      id: 6,
       title: "Samuel CPA PLLC",
       category: "Finance",
       image: msacpaMockup2,
@@ -157,35 +182,35 @@ export function Projects() {
       liveLabel: "Visit Live Site",
       githubUrl: "https://github.com/rmathew21/msacpas",
     },
-    {
-      id: 6,
-      title: "Idili & Espresso",
-      category: "Food",
-      image: idiliEspressoMockup,
-      description:
-        "A vibrant restaurant website for a Colorado café blending South Indian and espresso culture, featuring a showcase of their fusion menu and integrated online ordering via Squarespace.",
-      fullDescription:
-        "Idili & Espresso is a Colorado-based café that brings together the warmth of South Indian comfort food and specialty espresso drinks in a uniquely inviting dining experience. The goal of this project was to build a modern, visually engaging web presence that reflects the café's personality — colorful, approachable, and rooted in cultural fusion. The site serves as both a digital storefront and a menu showcase, guiding visitors from first impression to online order with minimal friction. Online ordering is powered through Squarespace's ordering system, seamlessly linked from the site. The custom logo and favicons, designed in Canva and refined in Inkscape, give the brand a cohesive identity across all touchpoints.",
-      technologies: [
-        "React",
-        "Vite",
-        "Tailwind CSS",
-        "React Router",
-        "Inkscape+Canva",
-      ],
-      // results: [
-      //   "45% increase in new client bookings",
-      //   "Gift card sales up 120%",
-      //   "Perfect accessibility score",
-      // ],
-      challenge:
-        "The client needed a website that could do a lot at once — communicate a distinct cultural identity, display a diverse fusion menu in an appetizing way, and funnel customers toward online ordering without requiring a full custom e-commerce build. There was also no existing brand identity to work from, meaning the visual design — including logo and favicon — had to be created from scratch to match the café's warm, cross-cultural personality.",
-      solution:
-        "Built with React, Vite, Tailwind CSS, and React Router DOM, the site is fast, fully responsive, and easy to navigate on any device. The menu is presented in a clean, categorized layout that highlights the café's fusion offerings without overwhelming visitors. Online ordering is handled through an embedded Squarespace integration, keeping the experience smooth while avoiding the complexity of a custom backend. The logo and favicons were designed in Canva and finalized in Inkscape, establishing a cohesive brand identity that carries through every page.",
-      liveUrl: "https://idiliespresso.com/",
-      liveLabel: "Visit Live Site",
-      githubUrl: "https://github.com/rmathew21/idili-espresso",
-    },
+    // {
+    //   id: 7,
+    //   title: "Idili & Espresso",
+    //   category: "Food",
+    //   image: idiliEspressoMockup,
+    //   description:
+    //     "A vibrant restaurant website for a Colorado café blending South Indian and espresso culture, featuring a showcase of their fusion menu and integrated online ordering via Squarespace.",
+    //   fullDescription:
+    //     "Idili & Espresso is a Colorado-based café that brings together the warmth of South Indian comfort food and specialty espresso drinks in a uniquely inviting dining experience. The goal of this project was to build a modern, visually engaging web presence that reflects the café's personality — colorful, approachable, and rooted in cultural fusion. The site serves as both a digital storefront and a menu showcase, guiding visitors from first impression to online order with minimal friction. Online ordering is powered through Squarespace's ordering system, seamlessly linked from the site. The custom logo and favicons, designed in Canva and refined in Inkscape, give the brand a cohesive identity across all touchpoints.",
+    //   technologies: [
+    //     "React",
+    //     "Vite",
+    //     "Tailwind CSS",
+    //     "React Router",
+    //     "Inkscape+Canva",
+    //   ],
+    //   // results: [
+    //   //   "45% increase in new client bookings",
+    //   //   "Gift card sales up 120%",
+    //   //   "Perfect accessibility score",
+    //   // ],
+    //   challenge:
+    //     "The client needed a website that could do a lot at once — communicate a distinct cultural identity, display a diverse fusion menu in an appetizing way, and funnel customers toward online ordering without requiring a full custom e-commerce build. There was also no existing brand identity to work from, meaning the visual design — including logo and favicon — had to be created from scratch to match the café's warm, cross-cultural personality.",
+    //   solution:
+    //     "Built with React, Vite, Tailwind CSS, and React Router DOM, the site is fast, fully responsive, and easy to navigate on any device. The menu is presented in a clean, categorized layout that highlights the café's fusion offerings without overwhelming visitors. Online ordering is handled through an embedded Squarespace integration, keeping the experience smooth while avoiding the complexity of a custom backend. The logo and favicons were designed in Canva and finalized in Inkscape, establishing a cohesive brand identity that carries through every page.",
+    //   liveUrl: "https://idiliespresso.com/",
+    //   liveLabel: "Visit Live Site",
+    //   githubUrl: "https://github.com/rmathew21/idili-espresso",
+    // },
   ];
 
   return (
