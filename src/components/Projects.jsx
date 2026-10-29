@@ -23,7 +23,7 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Shopping List",
+      title: "In Our Cart",
       category: "Productivity",
       image: shoppingListMockup,
       description:
@@ -40,9 +40,9 @@ export function Projects() {
           "Most shared list apps require everyone to download an app and create an account before they can add a single item. I wanted something a household could start using immediately in the browser, that stayed in sync between phones in the store, and that was simple to log in to with a short PIN, while still keeping each household's list private and protected from guessing.",
       solution:
           "I built the app with Next.js, TypeScript, and Tailwind CSS, using Neon Postgres with Drizzle ORM and Server Actions for all data changes. Lists start on the device and are saved to the database when the user creates a list name and PIN, with per-list lockouts after repeated wrong PINs. Optimistic updates make every tap feel instant, lightweight polling keeps devices in sync, and touches like swipe-to-check-off, swipe-to-delete with undo, a check-off animation, and automatic item icons make it quick to use one-handed in the aisle.", 
-      liveUrl: "https://shopping-list-kad5.vercel.app/",
+      liveUrl: "https://www.inourcart.net/",
       liveLabel: "Visit Live Site",
-      githubUrl: "https://github.com/rmathew21/shopping-list",
+      githubUrl: "https://github.com/rmathew21/in_our_cart",
     },
     {
       id: 2,
