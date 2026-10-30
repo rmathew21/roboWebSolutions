@@ -12,7 +12,7 @@ import nexGenMockup2 from "../assets/nexGenMockup2.png";
 import msacpaMockup2 from "../assets/msacpaMockup2.png";
 // import idiliEspressoMockup from "../assets/idiliEspressoMockup.png";
 import cleanHomeProsMockup from "../assets/cleanHomeProsMockup.png";
-import shoppingListMockup from "../assets/shoppingListMockup.png";
+import inOurCartMockup from "../assets/inOurCartMockup.png"
 
 //Mockup color in Shot.so use #1E293B
 
@@ -25,7 +25,7 @@ export function Projects() {
       id: 1,
       title: "In Our Cart",
       category: "Productivity",
-      image: shoppingListMockup,
+      image: inOurCartMockup,
       description:
           "A shared shopping list web app that syncs across devices, so everyone in a household sees what's been added and what's already in the cart.",
       fullDescription:
